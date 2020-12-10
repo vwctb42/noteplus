@@ -151,6 +151,7 @@ a:hover .tooltip,button:hover .tooltip{opacity:1;filter:alpha(opacity=100)}
 .select_box:hover:after{transform:rotate(180deg);-webkit-transform:rotate(180deg);-moz-transform:rotate(180deg);-ms-transform:rotate(180deg)}
 /*라디오버튼, 체크박스, 스위치 공통*/
 .radio,.checkbox{display:block;position:relative;margin:0;padding:0}
+.radio.mnq{ margin-right:1rem;}
 .radio:after,.checkbox:after{clear:both;display:block;content:""}
 .radio label,.checkbox label{display:block;float:left;position:relative;width:auto;height:auto;min-height:1.25rem;margin:0 0.9375rem 0 0;padding-left:1.5rem;line-height:1.25rem;cursor:pointer}
 .radio label:last-child,.checkbox label:last-child{margin-right:0}
@@ -1029,8 +1030,13 @@ a:hover .tooltip,button:hover .tooltip{opacity:1;filter:alpha(opacity=100)}
 /*입력폼*/
 #chatting .chatForm{display:block;position:absolute;bottom:0;left:0;width:100%;height:6.875rem}
 .chatForm > .chat_etc,.chatForm > .chat_iptForm{display:block;position:relative;height:3.125rem;background:#1a1c21}
-.chatForm > .chat_etc{padding-right:6.25rem}
+.chatForm button.complite{display:block;position:relative;padding:0.125rem 0.875rem;margin:0 0.9rem;border-radius:1.1875rem;background: #626262;font-size:0.75rem;line-height:1.25rem;color:#000;letter-spacing:-0.03125rem;text-align: center;}
+.chatForm button.complite.active{background: #40cccf;color:#fff;}
+.chatForm span.selected{font-size: 0.625rem;color:#fff;}
+
+/*.chatForm > .chat_etc{padding-right:6.25rem}*/
 .chatForm > .chat_iptForm{height:3.75rem;padding-right:3.75rem;background:#fff;z-index:1}
+.chatForm dl{display: flex !important;align-items: center;justify-content: space-between;}
 .chatForm dl,.chatForm dt,.chatForm dd{display:block;position:relative}
 .chatForm dt > a,.chatForm dt > button{display:block;position:relative;padding:0.9375rem 3.125rem 0.9375rem 1.25rem;font-size:1rem;line-height:1.25rem;color:#cdd1da;letter-spacing:-0.03125rem}
 .chatForm dt > a > i[class*="xi-"],.chatForm dt > button > i[class*="xi-"]{display:block;position:absolute;top:0;right:0;width:3.125rem;height:3.125rem;padding:0.9375rem;font-size:1.25rem;line-height:1.25rem;text-align:center}
@@ -1084,6 +1090,12 @@ a:hover .tooltip,button:hover .tooltip{opacity:1;filter:alpha(opacity=100)}
 .chat_wrap .secret > .chat_item.mine .author_name{display:block;color:#305340}
 .chat_wrap .note_secret{display:block;position:absolute;top:1.0625rem;right:1.25rem;font-size:0.75rem;line-height:1rem;color:#305340;letter-spacing:-0.03125rem}
 .chat_notice + .chat_item{margin-top:0.625rem}
+
+/*질문*/
+.chat_item .que{display:flex;position:relative;margin-top: 0.25rem;justify-content: space-between;}
+.chat_item .que .que_num{width:1.625rem;text-align:right;color:white;font-size:0.75rem;float:left;}
+.chat_item .que_message{float:left;width:calc(100% - 2rem);padding:0.4375rem 0.625rem;border-radius:0.25rem;background:#eeeff4;font-size:0.75rem;line-height:1.125rem;color:#2f323c;letter-spacing:-0.03125rem;text-align:left;}
+.chat_item .que_message.active {background: #3e4e7a;color:white;}
 
 /*공유노트*/
 #shareNote{display:none;position:relative;height:100%}
