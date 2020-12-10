@@ -1,0 +1,2182 @@
+<!DOCTYPE HTML>
+<html lang="kr">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Pragma" content="no-cache" />
+<meta http-equiv="Cache-Control" content="no-cache" /> 
+<meta http-equiv="expires" content="0" />
+<meta http-equiv="content-language" content="kr" />
+<meta http-equiv="imagetoolbar" content="no" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="format-detection" content="telephone=no,email=no,address=no" />
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scaleable=yes" />
+<meta name="author" content="온라인멘토링시스템" />
+<meta name="Keywords" content="온라인멘토링시스템" />
+<meta name="description" content="아이디어와 콘텐츠를 실시간으로 공유하는 비주얼 커뮤니케이션" />
+<meta name="copyright" content="(35261) 대전광역시 서구 문정로 22 충렬공빌딩 5층 / Tel. 042-477-5600 / Fax. 042-477-5602" />
+<title>온라인멘토링시스템</title>
+<link rel="stylesheet" type="text/css" href="../../css/common/webfonts.css" />
+<link rel="stylesheet" type="text/css" href="../../css/common/common.css" />
+<link rel="stylesheet" type="text/css" href="../../css/system.css" />
+<script type="text/javascript" src="../../js/jquery/core/jquery-1.11.2.min.js"></script>
+<script type="text/javascript" src="../../js/jquery/core/jquery-ui.custom.js"></script>
+<script type="text/javascript" src="../../js/jquery/core/jquery.easing.1.3.js"></script>
+<script type="text/javascript" src="../../js/script_system.js"></script>
+<!--[if lt IE 9]>
+<script type="text/javascript" src="/js/jquery/core/html5.js"></script>
+<![endif]-->
+</head>
+<body>
+<dl id="skipNav">
+	<dt class="hide">컨텐츠 바로가기 영역</dt>
+	<dd><a href="#content">본문으로 바로가기</a></dd>
+</dl>
+
+<div id="wrap" class="mettingRoomWrap">
+	<div id="shadow_device"></div>
+	<header id="header">
+		<div class="menu_trigger">
+			<p class="btn_menu"><a href="#"><i class="xi-align-left" aria-hidden="true"></i><span class="tooltip"><em>메뉴</em></span></a></p>
+			<p class="timer">00 : 01 : 30</p>
+		</div>
+
+		<div class="video_setup">
+			<p class="camera"><a href="#" class="active"><i class="xi-webcam" aria-hidden="true"></i><span class="tooltip"><em>카메라</em></span></a></p>
+			<p class="mic"><a href="#"><i class="xi-microphone" aria-hidden="true"></i><span class="tooltip"><em>마이크</em></span></a></p>
+		</div>
+
+		<div class="utilMenu_wrap">
+			<div class="etc">
+				<a href="#"><i class="gp-hands" aria-hidden="true"></i><span class="tooltip"><em>발표요청하기</em></span></a>
+				<a href="#" class="win_mode"><i class="xi-expand" aria-hidden="true"></i><span class="tooltip"><em>전체화면</em></span></a>
+				<a href="#" class="win_mode disable"><i class="xi-compress" aria-hidden="true"></i><span class="tooltip"><em>창모드</em></span></a>
+
+				<a href="#"><i class="xi-presentation" aria-hidden="true"></i><span class="tooltip"><em>프리젠테이션</em></span></a>
+			</div>
+			<div class="service">
+				<a href="#"><i class="xi-group" aria-hidden="true"></i><span class="tooltip"><em>참석자</em></span></a>
+				<a href="#"><i class="xi-library-books-o" aria-hidden="true"></i><span class="tooltip"><em>공유컨텐츠</em></span></a>
+				<a href="#"><i class="xi-forum-o" aria-hidden="true"></i><span class="tooltip"><em>채팅</em></span><span class="badge">7</span></a>
+				<a href="#"><i class="xi-share-alt-o" aria-hidden="true"></i><span class="tooltip"><em>공유노트</em></span></a>
+				<a href="#" class="active"><i class="xi-ellipsis-v" aria-hidden="true"></i><span class="tooltip"><em>부가서비스</em></span></a>
+			</div>
+			<!-- 모바일 메뉴추가 -->
+			<p class="btn_service_more"><!-- "active"추가시 활성화 -->
+				<a href="#"><i class="xi-apps" aria-hidden="true"></i><span class="hide">메뉴 더보기</span></a>
+			</p>
+			<!-- //모바일 메뉴추가 -->
+		</div>
+	</header>
+	<!-- 모바일에서만 보임 -->
+	<div id="serviceMore" class=""><!-- class="active"추가시 활성화 -->
+		<nav class="serviceMore_wrap">
+			<ul class="serviceMore_lst">
+			<li><a href="#"><i class="xi-group" aria-hidden="true"></i>참석자</a></li>
+			<li><a href="#"><i class="xi-library-books-o" aria-hidden="true"></i>공유컨텐츠</a></li>
+			<li><a href="#"><i class="xi-forum-o" aria-hidden="true"></i>채팅<span class="badge">7</span></a></li>
+			<li><a href="#"><i class="xi-share-alt-o" aria-hidden="true"></i> 공유노트</a></li>
+			<li><a href="#"><i class="xi-devices" aria-hidden="true"></i> 디바이스 관리</a></li>
+			<li><a href="#"><i class="xi-presentation" aria-hidden="true"></i> 설문/투표 관리</a></li>
+			<li><a href="#"><i class="xi-diskette" aria-hidden="true"></i> 회의록</a></li>
+			</ul>
+		</nav>
+		<p class="btn_close"><a href="#"><i class="xi-close" aria-hidden="true"></i><span class="hide">메뉴 더보기</span></a></p>
+	</div>
+	<!-- //모바일에서만 보임 -->
+
+	<hr/>
+	
+	<!-- 기본정보와 화면구성 설정 -->
+	<aside id="basicInfoConfig" class="">
+		<div class="basicInfoConfig_wrap">
+			<p class="btn_home"><a href="#" class="active"><i class="xi-home-o" aria-hidden="true"></i><span class="hide">HOME</span></a></p>
+			<p class="btn_config"><a href="#"><i class="xi-cog" aria-hidden="true"></i><span class="hide">CONFIG</span></a></p>
+			<p class="btn_close"><a href="#"><i class="xi-close" aria-hidden="true"></i><span class="hide">CLOSE</span></a></p>
+			<div class="basicInfoConfig">
+				<!-- 기본정보 -->
+				<div id="basicInfo" class="basicInfo">
+					<div class="profile_picture">
+						<span class="picture">
+							<img src="../../images/system/profile_img.jpg" alt="토르 아스가르드" />
+							<span class="userType">멘토</span>
+						</span>
+						<span class="name_email">
+							<strong>토르 아스가르드</strong>
+							<span class="email">Thor@incloud.kr</span>
+						</span>
+					</div>
+					<p class="btn_signOff">
+						<a href="#" class="end">종료</a>
+						<a href="#" class="out">나가기</a>
+					</p>
+					<div class="shareNote_wrap">
+						<div class="shareNote">
+							<strong>토르님 공유노트</strong>
+							<ul class="noteUser">
+							<li><em>토르(멘토)</em> 2017. 11. 11 15:20</li>
+							</ul>
+							<p class="btn_modify"><a href="#"><i class="xi-pen" aria-hidden="true"></i><span class="hide">수정</span></a></p>
+						</div>
+
+						<div class="shareNote">
+							<strong>토르님 공유노트</strong>
+							<ul class="noteUser">
+							<li><em>토르(멘토)</em> 2017. 11. 11 15:20</li>
+							</ul>
+							<p class="btn_modify"><a href="#"><i class="xi-pen" aria-hidden="true"></i><span class="hide">수정</span></a></p>
+						</div>
+					</div>
+					<div class="language_select">
+						<div class="select_box">
+							<label for="language">언어 선택</label>
+							<select class="info_select" id="language" title="언어 선택">
+							<option selected="selected">언어 선택</option>
+							<option>한국어</option>
+							<option>영어</option>
+							<option>아랍어</option>
+							</select>
+						</div>
+					</div>
+				</div>
+				<!-- //기본정보 -->
+				<!-- 환경설정 -->
+				<div id="basicConfig" class="basicConfig active">
+					<p class="title">환경설정</p>
+					<div class="config_wrap">
+						<div class="config">
+							<strong>노트관리</strong>
+							<ul class="config_lst">
+							<li>
+								<em>게스트 입장 허용</em>
+								<label class="switch">
+									<input type="checkbox" name="switch" class="switch-input" />
+									<span class="switch-label" data-on="ON" data-off="OFF"></span>
+									<i class="switch-handle"></i>
+								</label>
+							</li>
+							<li>
+								<em>비밀번호 사용</em>
+								<label class="switch">
+									<input type="checkbox" name="switch" class="switch-input" />
+									<span class="switch-label" data-on="ON" data-off="OFF"></span>
+									<i class="switch-handle"></i>
+								</label>
+								<input type="password" name="pass" value="" placeholder="비밀번호 입력" />
+							</li>
+							<li>
+								<em>종료 시 자동저장</em>
+								<label class="switch">
+									<input type="checkbox" name="switch" class="switch-input" />
+									<span class="switch-label" data-on="ON" data-off="OFF"></span>
+									<i class="switch-handle"></i>
+								</label>
+							</li>
+							<li>
+								<em>자료 다운로드 허용</em>
+								<label class="switch">
+									<input type="checkbox" name="switch" class="switch-input" />
+									<span class="switch-label" data-on="ON" data-off="OFF"></span>
+									<i class="switch-handle"></i>
+								</label>
+							</li>
+							<li>
+								<em>참석자 자료추가 허용</em>
+								<label class="switch">
+									<input type="checkbox" name="switch" class="switch-input" />
+									<span class="switch-label" data-on="ON" data-off="OFF"></span>
+									<i class="switch-handle"></i>
+								</label>
+							</li>
+							<li>
+								<em>참석자 판서기능 허용</em>
+								<label class="switch">
+									<input type="checkbox" name="switch" class="switch-input" />
+									<span class="switch-label" data-on="ON" data-off="OFF"></span>
+									<i class="switch-handle"></i>
+								</label>
+							</li>
+							</ul>
+						</div>
+						
+						<div class="config">
+							<strong>발표 진행 방식</strong>
+							<ul class="config_lst">
+							<li>
+								<em>발표요청 허용</em>
+								<label class="switch">
+									<input type="checkbox" name="switch" class="switch-input" />
+									<span class="switch-label" data-on="ON" data-off="OFF"></span>
+									<i class="switch-handle"></i>
+								</label>
+								
+								<div class="radio">
+									<label>
+										<input type="radio" name="announceMode" />
+										<i class="xi-radiobox" aria-hidden="true"></i><span>순차 모드</span>
+									</label>
+									<label>
+										<input type="radio" name="announceMode" />
+										<i class="xi-radiobox" aria-hidden="true"></i><span>동시 모드</span>
+									</label>
+								</div>
+							</li>
+							<li>
+								<em>발표요청 승인필요</em>
+								<label class="switch">
+									<input type="checkbox" name="switch" class="switch-input" />
+									<span class="switch-label" data-on="ON" data-off="OFF"></span>
+									<i class="switch-handle"></i>
+								</label>
+
+								<div class="radio">
+									<label>
+										<input type="radio" name="approvalChk" />
+										<i class="xi-radiobox" aria-hidden="true"></i><span>진행자 승인</span>
+									</label>
+									<label>
+										<input type="radio" name="approvalChk" />
+										<i class="xi-radiobox" aria-hidden="true"></i><span>발표자 승인</span>
+									</label>
+								</div>
+							</li>
+							</ul>
+						</div>
+
+						<div class="config">
+							<strong>채팅</strong>
+							<ul class="config_lst">
+							<li>
+								<em>참석자간 대화 허용</em>
+								<label class="switch">
+									<input type="checkbox" name="switch" class="switch-input" />
+									<span class="switch-label" data-on="ON" data-off="OFF"></span>
+									<i class="switch-handle"></i>
+								</label>
+							</li>
+							<li>
+								<em>메시지 수신 허용</em>
+								<label class="switch">
+									<input type="checkbox" name="switch" class="switch-input" />
+									<span class="switch-label" data-on="ON" data-off="OFF"></span>
+									<i class="switch-handle"></i>
+								</label>
+							</li>
+							</ul>
+						</div>
+
+						<div class="config">
+							<strong>영상회의</strong>
+							<ul class="config_lst">
+							<li>
+								<em>영상회의 요청 허용</em>
+								<label class="switch">
+									<input type="checkbox" name="switch" class="switch-input" />
+									<span class="switch-label" data-on="ON" data-off="OFF"></span>
+									<i class="switch-handle"></i>
+								</label>
+							</li>
+							<li>
+								<em>영상회의 음성저장(MP3)</em>
+								<label class="switch">
+									<input type="checkbox" name="switch" class="switch-input" />
+									<span class="switch-label" data-on="ON" data-off="OFF"></span>
+									<i class="switch-handle"></i>
+								</label>
+							</li>
+							</ul>
+
+							<div class="cam">
+								<i class="xi-webcam" aria-hidden="true"></i>
+								<div class="select_box">
+									<label for="language">Logitech HD Webcam C525</label>
+									<select class="info_select" id="language" title="웹캠 선택">
+									<option selected="selected">Logitech HD Webcam C525</option>
+									</select>
+								</div>
+							</div>
+							<div class="mic">
+								<i class="xi-microphone-o" aria-hidden="true"></i>
+								<div class="select_box">
+									<label for="language">Default</label>
+									<select class="info_select" id="language" title="마이크 선택">
+									<option selected="selected">Default</option>
+									</select>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- //환경설정 -->
+			</div>
+		</div>
+	</aside>
+	<!-- //기본정보와 화면구성 설정 -->
+
+	<hr/>
+
+	<div id="content" class="container"><!-- current 추가 시 부가서비스활성화 -->
+		<section id="detail_content">
+			<!-- 메인컨텐츠 -->
+			<div class="first_mainCnts_wrap">
+				<div class="title">
+					<span class="eng">Online mentoring</span>
+					<h1><em>순심이</em>님의 멘토링룸</h1>
+					<span class="founder">개설자(멘토) : 순심이</span>
+				</div>
+				<div class="btns_wrap">
+					<ul>
+					<li><a href="#" class="button">클릭</a>
+						<div class="card_item">
+							<span class="card front"><a href="#" class="btn"><i class="icon no1" aria-hidden="true"></i>참가자 초대</a></span>
+							<span class="card overlay"><a href="#" class="btn"><i class="icon no1" aria-hidden="true"></i>참가자 초대</a></span>
+						</div>
+					</li>
+					<li><a href="#" class="button">클릭</a>
+						<div class="card_item">
+							<span class="card front"><a href="#" class="btn"><i class="icon no2" aria-hidden="true"></i>빈노트</a></span>
+							<span class="card overlay"><a href="#" class="btn"><i class="icon no2" aria-hidden="true"></i>빈노트</a></span>
+						</div>
+					</li>
+					<li><a href="#" class="button">클릭</a>
+						<div class="card_item">
+							<span class="card front"><a href="#" class="btn"><i class="icon no3" aria-hidden="true"></i>자료공유</a></span>
+							<span class="card overlay"><a href="#" class="btn"><i class="icon no3" aria-hidden="true"></i>자료공유</a></span>
+						</div>
+					</li>
+					</ul>
+				</div>
+			</div>
+			<!-- //메인컨텐츠 -->
+		</section>
+
+		<hr/>
+
+		<!-- 참석자, 공유컨텐츠, 채팅, 부가서비스(디바이스관리, 설문투표관리, 회의록) -->
+		<aside id="addService">
+			<!-- 참석자 -->
+			<div id="attendance" class=""><!-- class "active" 추가 시 활성화 -->
+				<p class="title">참가자 <em>(8/12)</em> <span class="more"><a href="#"><i class="xi-ellipsis-h" aria-hidden="true"></i> <span class="hide">더보기</span></a></span></p>
+
+				<div class="attendance_wrap">
+					<!-- 반복 -->
+					<div class="attendance">
+						<strong>진행자 <em>(1)</em></strong>
+						<ul class="attendance_lst">
+						<!-- 반복 -->
+						<li>
+							<a href="#">
+								<span class="picture"><img src="../../images/system/profile_img.jpg" alt="토르 아스가르드" /></span>
+								<span class="name">토르 아스가르드 (멘토)</span>
+							</a>
+							<span class="btn_more"><a href="#"><i class="xi-ellipsis-h" aria-hidden="true"></i> <span class="hide">더보기</span></a></span>
+
+							<ul class="attendee_active"><!-- class "active" 추가 시 활성화 -->
+							<li class="no1"><a href="#"><i class="xi-profile-o" aria-hidden="true"></i><em>15</em> <span class="hide">참가자 명수</span></a></li>
+							<li class="no2"><a href="#"><i class="xi-message-o" aria-hidden="true"></i> <span class="hide">채팅</span></a></li>
+							<li class="no3"><a href="#"><i class="xi-videocam-o" aria-hidden="true"></i> <span class="hide">발표</span></a></li>
+							</ul>
+
+							<ul class="dropdown-menu" role="menu"><!-- class "active" 추가 시 활성화 -->
+							<li><a href="#">참석자 초대</a></li>
+							<li><a href="#">전체 권한 초기화</a></li>
+							<li><a href="#">발표자로 지정</a></li>
+							<li><a href="#">참석자로 지정</a></li>
+							<li><a href="#">화면 가져오기</a></li>
+							<li><a href="#">참가 제한</a></li>
+							<li><a href="#">진행자로 지정</a></li>
+							<li><a href="#">초대 취소</a></li>
+							<li><a href="#">참가제한 해제</a></li>
+							<li><a href="#" class="approval">발표요청 승인</a></li>
+							<li><a href="#" class="refusal">발표요청 거부</a></li>
+							</ul>
+						</li>
+						<!-- //반복 -->
+						</ul>
+					</div>
+					<!-- //반복 -->
+
+					<div class="attendance">
+						<strong>발표자 <em>(1)</em></strong>
+						<ul class="attendance_lst">
+						<li>
+							<a href="#">
+								<span class="picture"><img src="../../images/system/profile_img.jpg" alt="제인" /></span>
+								<span class="name">제인 (멘티)</span>
+							</a>
+							<span class="btn_more"><a href="#"><i class="xi-ellipsis-h" aria-hidden="true"></i> <span class="hide">더보기</span></a></span>
+						</li>
+						</ul>
+					</div>
+
+					<div class="attendance">
+						<strong>참가자 <em>(4)</em></strong>
+						<ul class="attendance_lst">
+						<li>
+							<a href="#">
+								<span class="picture"><img src="../../images/system/profile_img.jpg" alt="제인" /></span>
+								<span class="name">참가자1 (멘티)</span>
+							</a>
+							<span class="btn_more"><a href="#"><i class="xi-ellipsis-h" aria-hidden="true"></i> <span class="hide">더보기</span></a></span>
+						</li>
+						<li>
+							<a href="#">
+								<span class="picture"><img src="../../images/system/profile_img.jpg" alt="제인" /></span>
+								<span class="name">참가자2 (멘티)</span>
+							</a>
+							<span class="btn_more"><a href="#"><i class="xi-ellipsis-h" aria-hidden="true"></i> <span class="hide">더보기</span></a></span>
+						</li>
+						<li>
+							<a href="#">
+								<span class="picture"><img src="../../images/system/profile_img.jpg" alt="제인" /></span>
+								<span class="name">참가자3 (멘티)</span>
+							</a>
+							<span class="btn_more"><a href="#"><i class="xi-ellipsis-h" aria-hidden="true"></i> <span class="hide">더보기</span></a></span>
+						</li>
+						<li>
+							<a href="#">
+								<span class="picture"><img src="../../images/system/profile_img.jpg" alt="제인" /></span>
+								<span class="name">참가자4 (멘티)</span>
+							</a>
+							<span class="btn_more"><a href="#"><i class="xi-ellipsis-h" aria-hidden="true"></i> <span class="hide">더보기</span></a></span>
+						</li>
+						</ul>
+					</div>
+
+					<div class="attendance limit_notAccess"><!-- 미접속,참여제한 시 limit_notAccess추가 -->
+						<strong>미접속 <em>(4)</em></strong>
+						<ul class="attendance_lst">
+						<li>
+							<a href="#">
+								<span class="picture"><i class="xi-user-o" aria-hidden="true"></i></span>
+								<span class="name">미접속자 (멘티)</span>
+							</a>
+							<span class="btn_more"><a href="#"><i class="xi-ellipsis-h" aria-hidden="true"></i> <span class="hide">더보기</span></a></span>
+						</li>
+						</ul>
+					</div>
+
+					<div class="attendance limit_notAccess"><!-- 미접속,참여제한 시 limit_notAccess추가 -->
+						<strong>참여제한 <em>(4)</em></strong>
+						<ul class="attendance_lst">
+						<li>
+							<a href="#">
+								<span class="picture"><i class="xi-user-o" aria-hidden="true"></i></span>
+								<span class="name">참여제한 (멘티)</span>
+							</a>
+							<span class="btn_more"><a href="#"><i class="xi-ellipsis-h" aria-hidden="true"></i> <span class="hide">더보기</span></a></span>
+						</li>
+						</ul>
+					</div>
+				</div>				
+				<!-- 참석자 검색 -->
+				<div class="attendance_search">
+					<label for="search" class="hide">검색어 입력</label>
+					<input type="search" class="search_input" id="search" name="search" value="" placeholder="검색어를 입력하세요" />
+					<button type="submit" class="submit"><i class="xi-search" aria-hidden="true"></i> <span class="hide">검색</span></button>
+				</div>
+				<!-- //참석자 검색 -->
+			</div>
+			<!-- //참석자 -->
+
+			<!-- 공유컨텐츠 -->
+			<div id="shareContents" class=""><!-- class "active" 추가 시 활성화 -->
+				<p class="title">공유 콘텐츠</p>
+				<ul class="share_lst">
+					<li><a href="#"><i class="xi-layout-o" aria-hidden="true"></i> 빈노트</a></li>
+					<li><a href="#"><i class="xi-folder-add-o" aria-hidden="true"></i> 자료추가</a></li>
+					<li><a href="#"><i class="xi-google" aria-hidden="true"></i> 구글 드라이브</a></li>
+				</ul>
+				<div class="shareContents">
+					<strong>공유중인 노트 <em>(3)</em></strong>
+					<div class="shareContents_lst">
+						<ul>
+						<li>
+							<a href="#">
+								<span class="file_exten ppt">P</span>
+								<span class="file_name">
+									<em>파워포인트 업로드파일</em>
+									<span class="count"><i class="xi-paper-o" aria-hidden="true"></i> 50 (토르)</span>
+								</span>
+							</a>
+							<span class="btn_more"><a href="#"><i class="xi-ellipsis-h" aria-hidden="true"></i> <span class="hide">더보기</span></a></span>
+							<span class="btn_del"><a href="#"><i class="xi-close-min" aria-hidden="true"></i> <span class="hide">삭제</span></a></span>
+
+							<ul class="dropdown-menu" role="menu"><!-- class "active" 추가 시 활성화 -->
+							<li><a href="#">원본 다운로드</a></li>
+							<li><a href="#">이름바꾸기</a></li>
+							<li><a href="#">삭제</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#">
+								<span class="file_exten xls">E</span>
+								<span class="file_name">
+									<em>엑셀 업로드파일</em>
+									<span class="count"><i class="xi-paper-o" aria-hidden="true"></i> 50 (토르)</span>
+								</span>
+							</a>
+							<span class="btn_more"><a href="#"><i class="xi-ellipsis-h" aria-hidden="true"></i> <span class="hide">더보기</span></a></span>
+							<span class="btn_del"><a href="#"><i class="xi-close-min" aria-hidden="true"></i> <span class="hide">삭제</span></a></span>
+						</li>
+						<li>
+							<a href="#">
+								<span class="file_exten doc">W</span>
+								<span class="file_name">
+									<em>워드프로세서 업로드파일</em>
+									<span class="count"><i class="xi-paper-o" aria-hidden="true"></i> 50 (토르)</span>
+								</span>
+							</a>
+							<span class="btn_more"><a href="#"><i class="xi-ellipsis-h" aria-hidden="true"></i> <span class="hide">더보기</span></a></span>
+							<span class="btn_del"><a href="#"><i class="xi-close-min" aria-hidden="true"></i> <span class="hide">삭제</span></a></span>
+						</li>
+						<li>
+							<a href="#">
+								<span class="file_exten img"><i class="xi-image-o" aria-hidden="true"></i></span>
+								<span class="file_name">
+									<em>이미지 업로드파일</em>
+									<span class="count"><i class="xi-paper-o" aria-hidden="true"></i> 50 (토르)</span>
+								</span>
+							</a>
+							<span class="btn_more"><a href="#"><i class="xi-ellipsis-h" aria-hidden="true"></i> <span class="hide">더보기</span></a></span>
+							<span class="btn_del"><a href="#"><i class="xi-close-min" aria-hidden="true"></i> <span class="hide">삭제</span></a></span>
+						</li>
+						<li class="upload">
+							<a href="#">
+								<span class="file_exten">25%</span>
+								<span class="file_name">
+									<em>첨부된 파일명이 긴 경우에는 ...</em>
+									<span class="count">업로드</span>
+								</span>
+							</a>
+							<span class="btn_more"><a href="#"><i class="xi-ellipsis-h" aria-hidden="true"></i> <span class="hide">더보기</span></a></span>
+							<span class="btn_del"><a href="#"><i class="xi-close-min" aria-hidden="true"></i> <span class="hide">삭제</span></a></span>
+						</li>
+						<li class="failed">
+							<a href="#">
+								<span class="file_exten"><i class="xi-emoticon-sad" aria-hidden="true"></i></span>
+								<span class="file_name">
+									<em>첨부된 이미지 파일.jpg</em>
+									<span class="count">업로드 실패</span>
+								</span>
+							</a>
+							<span class="btn_more"><a href="#"><i class="xi-ellipsis-h" aria-hidden="true"></i> <span class="hide">더보기</span></a></span>
+							<span class="btn_del"><a href="#"><i class="xi-close-min" aria-hidden="true"></i> <span class="hide">삭제</span></a></span>
+						</li>
+						<li class="convert">
+							<a href="#">
+								<span class="file_exten"><i class="xi-spinner-2" aria-hidden="true"></i></span>
+								<span class="file_name">
+									<em>첨부된 이미지 파일.jpg</em>
+									<span class="count">변환 (10/50)</span>
+								</span>
+							</a>
+							<span class="btn_more"><a href="#"><i class="xi-ellipsis-h" aria-hidden="true"></i> <span class="hide">더보기</span></a></span>
+							<span class="btn_del"><a href="#"><i class="xi-close-min" aria-hidden="true"></i> <span class="hide">삭제</span></a></span>
+						</li>
+						<li class="loading">
+							<a href="#">
+								<span class="file_exten"><i class="xi-spinner-2" aria-hidden="true"></i></span>
+								<span class="file_name">
+									<em>첨부된 이미지 파일.jpg</em>
+									<span class="count">로딩 (10/50)</span>
+								</span>
+							</a>
+							<span class="btn_more"><a href="#"><i class="xi-ellipsis-h" aria-hidden="true"></i> <span class="hide">더보기</span></a></span>
+							<span class="btn_del"><a href="#"><i class="xi-close-min" aria-hidden="true"></i> <span class="hide">삭제</span></a></span>
+						</li>
+						<li class="nameChange">
+							<a href="#">
+								<span class="file_exten ppt">P</span>
+								<span class="file_name">
+									<em><input type="text" class="fileName_change" id="fileName_change" name="fileName_change" value="" placeholder="첨부된 이미지 파일.jpg" /></em>
+									<span class="count"><i class="xi-paper-o" aria-hidden="true"></i> 50 (토르)</span>
+								</span>
+							</a>
+							<span class="btn_check"><a href="#"><i class="xi-check-min" aria-hidden="true"></i> <span class="hide">확인</span></a></span>
+						</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<!-- //공유컨텐츠 -->
+
+			<!-- 채팅 -->
+			<div id="chatting" class=""><!-- class "active" 추가 시 활성화 -->
+				<p class="title">
+					<a href="#" class="active">전체</a>
+					<a href="#">채팅</a>
+					<a href="#">파일</a>
+					<a href="#">알림메시지</a>
+				</p>
+				<div class="chat_wrap">
+					<div class="chat_notice">
+						<i class="xi-bell-o" aria-hidden="true"></i>
+						<span class="title">순심이님이 참석했습니다.</span>
+						<span class="date"><em>2017.11.11</em>오후 8:00</span>
+						<span class="btn_close"><a href="#"><i class="xi-close-min" aria-hidden="true"></i> <span class="hide">닫기</span></a></span>
+					</div>
+					<div class="chat_notice">
+						<i class="xi-bell-o" aria-hidden="true"></i>
+						<span class="title">순심이님이 새 노트를 추가했습니다.</span>
+						<span class="date"><em>오늘</em>오후 8:00</span>
+						<span class="btn_close"><a href="#"><i class="xi-close-min" aria-hidden="true"></i> <span class="hide">닫기</span></a></span>
+					</div>
+					<div class="chat_notice">
+						<i class="xi-bell-o" aria-hidden="true"></i>
+						<span class="title">순심이님이 새 노트를 추가했습니다. Soon Sim changed to presenters.</span>
+						<span class="date"><em>오늘</em>오후 10:00</span>
+						<span class="btn_close"><a href="#"><i class="xi-close-min" aria-hidden="true"></i> <span class="hide">닫기</span></a></span>
+					</div>
+
+					<div class="chat_item mine">
+						<div class="message">
+							<span class="author_name">토르 아스가르드</span>
+							<span class="timestamp">오후 8:00</span>
+							<div class="message_content">순심이님 안녕하세요!</div>
+						</div>
+					</div>
+					<div class="chat_item">
+						<span class="profile_img"><img src="../../images/system/profile_img.jpg" alt="토르 아스가르드" /></span>
+						<div class="message">
+							<span class="author_name">토르 아스가르드</span>
+							<div class="message_content">네 ...... 반갑습니다....</div>
+							<span class="timestamp">오후 8:00</span>
+						</div>
+					</div>
+					<div class="chat_item mine">
+						<div class="message">
+							<span class="author_name">토르 아스가르드</span>
+							<span class="timestamp">오후 8:00</span>
+							<div class="message_content">오늘 창업기의 재무관리에 대한 멘토링을 진행하겠습니다.</div>
+						</div>
+					</div>
+					<div class="chat_item">
+						<span class="profile_img"><img src="../../images/system/profile_img.jpg" alt="토르 아스가르드" /></span>
+						<div class="message">
+							<span class="author_name">토르 아스가르드</span>
+							<div class="message_content">비밀스러운 글입니다.</div>
+							<span class="timestamp">오후 8:00</span>
+						</div>
+					</div>
+					<div class="secret">
+						<div class="chat_item">
+							<span class="profile_img"><img src="../../images/system/profile_img.jpg" alt="토르 아스가르드" /></span>
+							<div class="message">
+								<span class="author_name">토르 아스가르드</span>
+								<div class="message_content">비밀스러운 글입니다.</div>
+								<span class="timestamp">오후 8:00</span>
+							</div>
+						</div>
+						<div class="chat_item mine">
+							<div class="message">
+								<span class="author_name">토르 아스가르드 &lt; 나</span>
+								<span class="timestamp">오후 8:00</span>
+								<div class="message_content">무슨 일인지 비밀스럽게 얘기해봐</div>
+							</div>
+						</div>
+						<p class="note_secret"><i class="xi-lock-o" aria-hidden="true"></i> 비밀글</p>
+					</div>
+					<div class="chat_notice shareFile">
+						<i class="xi-file-add-o" aria-hidden="true"></i>
+						<span class="title">순심이님이 파일을 공유했습니다.<em>공유한 파일명.ppt</em></span>
+						<span class="date"><em>2017.11.11</em>오후 10:00</span>
+						<span class="btn_close"><a href="#"><i class="xi-close-min" aria-hidden="true"></i> <span class="hide">닫기</span></a></span>
+					</div>
+				</div>
+
+				<div class="chatForm">
+					<div class="chat_etc">
+						<dl>
+						<dt class=""><a href="#">전체 <i class="xi-caret-up-min" aria-hidden="true"></i></a></dt><!-- class="fold" 추가 시 활성화 -->
+						<dd id="chatPerson_chk">
+							<div class="radio">
+								<label>
+									<input type="radio" name="chatting_num" />
+									<i class="xi-radiobox" aria-hidden="true"></i><span>전체</span>
+								</label>
+								<label>
+									<input type="radio" name="chatting_num" />
+									<i class="xi-radiobox" aria-hidden="true"></i><span>순심이</span>
+								</label>
+								<label>
+									<input type="radio" name="chatting_num" />
+									<i class="xi-radiobox" aria-hidden="true"></i><span>토르</span>
+								</label>
+								<label>
+									<input type="radio" name="chatting_num" />
+									<i class="xi-radiobox" aria-hidden="true"></i><span>제인</span>
+								</label>
+								<label>
+									<input type="radio" name="chatting_num" />
+									<i class="xi-radiobox" aria-hidden="true"></i><span>참석자1</span>
+								</label>
+								<label>
+									<input type="radio" name="chatting_num" />
+									<i class="xi-radiobox" aria-hidden="true"></i><span>참석자2</span>
+								</label>
+								<label>
+									<input type="radio" name="chatting_num" />
+									<i class="xi-radiobox" aria-hidden="true"></i><span>참석자3</span>
+								</label>
+							</div>
+						</dd>
+						</dl>
+						<p class="attachfile">
+							<a href="#" class="file"><i class="xi-paperclip" aria-hidden="true"></i><span class="hide">첨부파일</span></a>
+							<a href="#" class="img"><i class="xi-image-o" aria-hidden="true"></i><span class="hide">첨부이미지</span></a>
+						</p>
+					</div>
+					<div class="chat_iptForm">
+						<label for="message" class="hide">메시지 입력</label>
+						<input type="text" class="message_input" id="message" name="message" value="" placeholder="메시지를 입력하세요" />
+						<button type="submit" class="submit"><i class="xi-message-o" aria-hidden="true"></i> <span class="hide">메시지</span></button>
+					</div>
+				</div>
+			</div>
+			<!-- //채팅 -->
+
+			<!-- 공유노트 -->
+			<div id="shareNote" class=""><!-- class "active" 추가 시 활성화 -->
+				<!-- 목록 -->
+				<div class="shareNote_menu">
+					<p class="title">공유노트</p>
+					<ul class="shareNote_lst">
+						<li><a href="#"><i class="xi-folder-download-o" aria-hidden="true"></i> 공유노트 다운로드</a></li>
+						<li><a href="#"><i class="xi-mail-o" aria-hidden="true"></i> 공유노트 이메일 전송</a></li>
+					</ul>
+				</div>
+				<!-- //목록 -->
+			</div>
+			<!-- //공유노트 -->
+
+			<!-- 부가서비스 -->
+			<div id="additionalSVC" class=""><!-- class "active" 추가 시 활성화 -->
+				<!-- 목록 -->
+				<div class="additionalSVC_menu">
+					<p class="title">부가서비스</p>
+					<ul class="additionalSVC_lst">
+						<li><a href="#"><i class="xi-devices" aria-hidden="true"></i> 디바이스 관리</a></li>
+						<li><a href="#"><i class="xi-presentation" aria-hidden="true"></i> 설문/투표 관리</a></li>
+						<li><a href="#"><i class="xi-diskette" aria-hidden="true"></i> 회의록</a></li>
+					</ul>
+				</div>
+				<!-- //목록 -->
+
+				<!-- 디바이스관리 -->
+				<div id="svcDeviceManage" class="svcDeviceManage_wrap"><!-- class "current" 추가 시 활성화 -->
+					<p class="title"><i class="xi-angle-left-min" aria-hidden="true"></i> 디바이스 관리</p>
+
+					<div class="svcDeviceManage total">
+						<strong>디바이스</strong>
+						<div class="btn_management">
+							<a href="#"><i class="xi-refresh" aria-hidden="true"></i> <span class="hide">재검색</span></a>
+							<a href="#"><i class="xi-check-circle-o" aria-hidden="true"></i> <span class="hide">체크완료</span></a>
+							<a href="#"><i class="xi-lock-o" aria-hidden="true"></i> <span class="hide">잠김</span></a>
+							<a href="#"><i class="xi-ellipsis-h" aria-hidden="true"></i> <span class="hide">더보기</span></a>
+						</div>
+
+						<ul class="dropdown-menu" role="menu"><!-- class "active" 추가 시 활성화 -->
+						<li><a href="#">재시작</a></li>
+						<li><a href="#">전원종료</a></li>
+						</ul>
+					</div>
+
+					<div class="svcDeviceManage">
+						<strong>진행자 <em>(2)</em></strong>
+						<ul class="svcDeviceManage_lst">
+						<li>
+							<a href="#">
+								<span class="picture"><img src="../../images/system/profile_img.jpg" alt="제인" /></span>
+								<span class="name">(나) 토르</span>
+							</a>
+
+							<span class="btn_function">
+								<a href="#">
+									<i class="xi-lock-o on" aria-hidden="true"></i>
+									<i class="xi-unlock-o" aria-hidden="true"></i>
+									<span class="hide">잠금</span>
+								</a>
+								<a href="#">
+									<i class="xi-apple on" aria-hidden="true"></i> <span class="hide">아이폰</span>
+									<i class="xi-android" aria-hidden="true"></i> <span class="hide">안드로이드</span>
+								</a>
+								<a href="#">
+									<i class="xi-battery on" aria-hidden="true"></i>
+									<i class="xi-battery-o" aria-hidden="true"></i><!-- o,10,20~90/10단위씩증가 -->
+									<span class="hide">배터리</span>
+								</a>
+								<a href="#">
+									<i class="xi-wifi on" aria-hidden="true"></i>
+									<i class="xi-wifi-signal-mid" aria-hidden="true"></i><!-- mid,min -->
+									<span class="hide">와이파이</span>
+								</a>
+							</span>
+						</li>
+						<li>
+							<a href="#">
+								<span class="picture"><img src="../../images/system/profile_img.jpg" alt="제인" /></span>
+								<span class="name">(나) 토르</span>
+							</a>
+							
+							<span class="btn_function">
+								<a href="#">
+									<i class="xi-lock-o" aria-hidden="true"></i>
+									<i class="xi-unlock-o on" aria-hidden="true"></i>
+									<span class="hide">잠금</span>
+								</a>
+								<a href="#">
+									<i class="xi-apple" aria-hidden="true"></i> <span class="hide">아이폰</span>
+									<i class="xi-android on" aria-hidden="true"></i> <span class="hide">안드로이드</span>
+								</a>
+								<a href="#">
+									<i class="xi-battery" aria-hidden="true"></i>
+									<i class="xi-battery-50 on" aria-hidden="true"></i><!-- o,10,20~90/10단위씩증가 -->
+									<span class="hide">배터리</span>
+								</a>
+								<a href="#">
+									<i class="xi-wifi" aria-hidden="true"></i>
+									<i class="xi-wifi-signal-mid on" aria-hidden="true"></i><!-- mid,min -->
+									<span class="hide">와이파이</span>
+								</a>
+							</span>
+						</li>
+						</ul>
+					</div>
+
+					<div class="svcDeviceManage">
+						<strong>참가자 <em>(4)</em></strong>
+						<ul class="svcDeviceManage_lst">
+						<li>
+							<a href="#">
+								<span class="picture"><i class="xi-user-o" aria-hidden="true"></i></span>
+								<span class="name">참가자1 (멘티)</span>
+							</a>
+							
+							<span class="btn_function">
+								<a href="#">
+									<i class="xi-chrome on" aria-hidden="true"></i>
+									<i class="xi-firefox" aria-hidden="true"></i>
+									<i class="xi-edge" aria-hidden="true"></i>
+									<i class="xi-safari" aria-hidden="true"></i>
+									<span class="hide">브라우저</span>
+								</a>
+								<a href="#">
+									<i class="xi-windows on" aria-hidden="true"></i>
+									<i class="xi-apple" aria-hidden="true"></i>
+									<span class="hide">PC</span>
+								</a>
+								<a href="#">
+									<i class="xi-plug on" aria-hidden="true"></i>
+									<i class="xi-battery" aria-hidden="true"></i>
+									<i class="xi-battery-0" aria-hidden="true"></i><!-- 0,10,20~90/10단위씩증가 -->
+									<span class="hide">배터리</span>
+								</a>
+								<a href="#">
+									<i class="xi-central-signal on" aria-hidden="true"></i>
+									<i class="xi-wifi" aria-hidden="true"></i>
+									<i class="xi-wifi-signal-mid" aria-hidden="true"></i><!-- mid,min -->
+									<span class="hide">와이파이</span>
+								</a>
+							</span>
+						</li>
+						<li>
+							<a href="#">
+								<span class="picture"><img src="../../images/system/profile_img.jpg" alt="제인" /></span>
+								<span class="name">참가자2 (멘티)</span>
+							</a>
+							
+							<span class="btn_function">
+								<a href="#">
+									<i class="xi-chrome" aria-hidden="true"></i>
+									<i class="xi-firefox on" aria-hidden="true"></i>
+									<i class="xi-edge" aria-hidden="true"></i>
+									<i class="xi-safari" aria-hidden="true"></i>
+									<span class="hide">브라우저</span>
+								</a>
+								<a href="#">
+									<i class="xi-windows on" aria-hidden="true"></i>
+									<i class="xi-apple" aria-hidden="true"></i>
+									<span class="hide">PC</span>
+								</a>
+								<a href="#">
+									<i class="xi-plug" aria-hidden="true"></i>
+									<i class="xi-battery" aria-hidden="true"></i>
+									<i class="xi-battery-30 on" aria-hidden="true"></i><!-- 0,10,20~90/10단위씩증가 -->
+									<span class="hide">배터리</span>
+								</a>
+								<a href="#">
+									<i class="xi-central-signal" aria-hidden="true"></i>
+									<i class="xi-wifi on" aria-hidden="true"></i>
+									<i class="xi-wifi-signal-mid" aria-hidden="true"></i><!-- mid,min -->
+									<span class="hide">와이파이</span>
+								</a>
+							</span>
+						</li>
+						<li>
+							<a href="#">
+								<span class="picture"><img src="../../images/system/profile_img.jpg" alt="제인" /></span>
+								<span class="name">참가자3 (멘티)</span>
+							</a>
+							
+							<span class="btn_function">
+								<a href="#">
+									<i class="xi-chrome" aria-hidden="true"></i>
+									<i class="xi-firefox" aria-hidden="true"></i>
+									<i class="xi-edge on" aria-hidden="true"></i>
+									<i class="xi-safari" aria-hidden="true"></i>
+									<span class="hide">브라우저</span>
+								</a>
+								<a href="#">
+									<i class="xi-windows" aria-hidden="true"></i>
+									<i class="xi-apple on" aria-hidden="true"></i>
+									<span class="hide">PC</span>
+								</a>
+								<a href="#">
+									<i class="xi-plug" aria-hidden="true"></i>
+									<i class="xi-battery" aria-hidden="true"></i>
+									<i class="xi-battery-80 on" aria-hidden="true"></i><!-- 0,10,20~90/10단위씩증가 -->
+									<span class="hide">배터리</span>
+								</a>
+								<a href="#">
+									<i class="xi-central-signal" aria-hidden="true"></i>
+									<i class="xi-wifi" aria-hidden="true"></i>
+									<i class="xi-wifi-signal-min on" aria-hidden="true"></i><!-- mid,min -->
+									<span class="hide">와이파이</span>
+								</a>
+							</span>
+						</li>
+						<li>
+							<a href="#">
+								<span class="picture"><img src="../../images/system/profile_img.jpg" alt="제인" /></span>
+								<span class="name">참가자4 (멘티)</span>
+							</a>
+							
+							<span class="btn_function">
+								<a href="#">
+									<i class="xi-chrome" aria-hidden="true"></i>
+									<i class="xi-firefox" aria-hidden="true"></i>
+									<i class="xi-edge" aria-hidden="true"></i>
+									<i class="xi-safari on" aria-hidden="true"></i>
+									<span class="hide">브라우저</span>
+								</a>
+								<a href="#">
+									<i class="xi-windows on" aria-hidden="true"></i>
+									<i class="xi-apple" aria-hidden="true"></i>
+									<span class="hide">PC</span>
+								</a>
+								<a href="#">
+									<i class="xi-plug on" aria-hidden="true"></i>
+									<i class="xi-battery" aria-hidden="true"></i>
+									<i class="xi-battery-80" aria-hidden="true"></i><!-- 0,10,20~90/10단위씩증가 -->
+									<span class="hide">배터리</span>
+								</a>
+								<a href="#">
+									<i class="xi-central-signal on" aria-hidden="true"></i>
+									<i class="xi-wifi" aria-hidden="true"></i>
+									<i class="xi-wifi-signal-min" aria-hidden="true"></i><!-- mid,min -->
+									<span class="hide">와이파이</span>
+								</a>
+							</span>
+						</li>
+						</ul>
+					</div>
+
+					<div class="svcDeviceManage limit_notAccess">
+						<strong>미접속 <em>(1)</em></strong>
+						<ul class="svcDeviceManage_lst">
+						<li>
+							<a href="#">
+								<span class="picture"><i class="xi-user-o" aria-hidden="true"></i></span>
+								<span class="name">참가자1 (멘티)</span>
+							</a>
+						</li>
+						</ul>
+					</div>
+				</div>
+				<!-- //디바이스관리 -->
+
+				<!-- 설문투표관리 목록 -->
+				<div id="svcPollsurvey_list" class="svcPollsurvey_wrap"><!-- class "current" 추가 시 활성화 -->
+					<p class="title"><i class="xi-angle-left-min" aria-hidden="true"></i> 설문/투표 관리</p>
+					<div class="svcPollsurvey">
+						<ul class="svcPollsurvey_lst">
+						<!-- 반복 -->
+						<li>
+							<a href="#"><span class="state standby">대기</span>설문/투표 제목 1</a>
+							<span class="btn_more"><a href="#"><i class="xi-ellipsis-h" aria-hidden="true"></i> <span class="hide">더보기</span></a></span>
+
+							<ul class="dropdown-menu" role="menu"><!-- class "active" 추가 시 활성화 -->
+							<li><a href="#">수정</a></li>
+							<li><a href="#">삭제</a></li>
+							</ul>
+						</li>
+						<!-- //반복 -->
+						<li>
+							<a href="#"><span class="state goon">진행</span>설문/투표 제목 2</a>
+							<span class="btn_more"><a href="#"><i class="xi-ellipsis-h" aria-hidden="true"></i> <span class="hide">더보기</span></a></span>
+						</li>
+						<li>
+							<a href="#"><span class="state standby">대기</span>설문/투표 제목 3</a>
+							<span class="btn_more"><a href="#"><i class="xi-ellipsis-h" aria-hidden="true"></i> <span class="hide">더보기</span></a></span>
+						</li>
+						<li>
+							<a href="#"><span class="state comp">완료</span>설문/투표 제목 4</a>
+							<span class="btn_more"><a href="#"><i class="xi-ellipsis-h" aria-hidden="true"></i> <span class="hide">더보기</span></a></span>
+						</li>
+						<li>
+							<a href="#"><span class="state comp">완료</span>설문/투표 제목 5</a>
+							<span class="btn_more"><a href="#"><i class="xi-ellipsis-h" aria-hidden="true"></i> <span class="hide">더보기</span></a></span>
+						</li>
+						<!-- 내용없음 -->
+						<li class="no_lstwrap">
+							<span class="noContent"><i class="xi-document" aria-hidden="true"></i>등록된 내용이 없습니다.</span>
+						</li>
+						<!-- //내용없음 -->
+						</ul>
+
+						<p class="btnPollsurvey">
+							<a href="#" class="regist"><span>신규등록 <i class="xi-plus" aria-hidden="true"></i></span></a>
+						</p>
+					</div>
+				</div>
+				<!-- //설문투표관리 목록 -->
+
+				<!-- 설문투표관리 상세보기 -->
+				<div id="svcPollsurvey_view" class="svcPollsurvey_wrap"><!-- class "current" 추가 시 활성화 -->
+					<div class="title">
+						<i class="xi-angle-left-min" aria-hidden="true"></i> 설문/투표 관리
+						<span class="btn_more"><a href="#"><i class="xi-ellipsis-h" aria-hidden="true"></i> <span class="hide">더보기</span></a></span>
+
+						<ul class="dropdown-menu" role="menu"><!-- class "active" 추가 시 활성화 -->
+						<li><a href="#">수정</a></li>
+						<li><a href="#">삭제</a></li>
+						</ul>
+					</div>
+					<div class="svcPollsurvey">
+						<div class="svcPollsurvey_view">
+							<div class="pollsurvey_viewHeader">
+								<p class="title"><span class="state comp">완료</span> 멘토링 만족도 조사</p>
+								<ul class="pollsurvey_guide">
+								<li><em>제출방식 </em>: 기명</li>
+								<li><em>진행시간 </em>: 120초</li>
+								<li><em>종료일시 </em>: 2017-11-01 10:10</li>
+								<li><em>대상자/응답자 </em>: <strong>10/10 (100%)</strong></li>
+								</ul>
+							</div>
+							<div class="pollsurvey_viewContents">
+								<dl class="pollsurvey_lst">
+								<dt><em>Q1.</em> 찬성/반대 질문내용 찬성/반대 질문내용 찬성 /반대 질문내용찬성/반대 질문내용</dt>
+								<dd>
+									<ul class="pollitem">
+									<li>찬성</li>
+									<li>반대</li>
+									<li>기권</li>
+									</ul>
+								</dd>
+								<dt><em>Q2.</em> 찬성/반대 질문내용 찬성/반대 질문내용 찬성 /반대 질문내용찬성/반대 질문내용</dt>
+								<dd>
+									<ul class="pollitem">
+									<li>찬성</li>
+									<li>반대</li>
+									<li>기권</li>
+									</ul>
+								</dd>
+								</dl>
+
+								<dl class="pollsurvey_lst pollComplete"><!-- 설문완료 시 -->
+								<dt><em>Q1.</em> 찬성/반대 질문내용 찬성/반대 질문내용 찬성 /반대 질문내용찬성/반대 질문내용</dt>
+								<dd>
+									<ul class="pollitem">
+									<li class="active">찬성 <em>6(60%)</em></li>
+									<li>반대 <em>1(10%)</em></li>
+									<li>기권 <em>3(30%)</em></li>
+									</ul>
+								</dd>
+								</dl>
+							</div>
+						</div>
+
+						<p class="btnPollsurvey">
+							<a href="#" class="start">시작</a>
+							<!--
+							<a href="#" class="comp">종료</a>
+							<a href="#" class="refresh">새로고침</a>
+							<a href="#" class="again">다시 진행</a>
+							-->
+						</p>
+					</div>
+				</div>
+				<!-- //설문투표관리 상세보기 -->
+
+				<!-- 설문투표관리 유형 -->
+				<div id="svcPollsurvey_pattern" class="svcPollsurvey_wrap"><!-- class "current" 추가 시 활성화 -->
+					<p class="title"><i class="xi-angle-left-min" aria-hidden="true"></i> 유형선택</p>
+					<div class="svcPollsurvey">
+						<ul class="pollsurvey_pattern">
+						<li class="no1">
+							<label class="patternCHK">
+								<input type="checkbox" name="patternCHK" />
+								<span class="figure">
+									<span>찬성</span><span>반대</span>
+								</span>
+								<strong>찬성/반대</strong>
+							</label>
+						</li>
+						<li class="no2">
+							<label class="patternCHK">
+								<input type="checkbox" name="patternCHK" />
+								<span class="figure">
+									<i class="xi-user-o" aria-hidden="true"></i>
+									<i class="xi-user-o" aria-hidden="true"></i>
+									<span class="star"><i class="xi-star-o" aria-hidden="true"></i></span>
+								</span>
+								<strong>대표선출</strong>
+							</label>
+						</li>
+						<li class="no3">
+							<label class="patternCHK">
+								<input type="checkbox" name="patternCHK" />
+								<span class="figure">
+									<span>1</span><span class="on">2</span><span>3</span><span>4</span>
+								</span>
+								<strong>객관식</strong>
+							</label>
+						</li>
+						<li class="no4">
+							<label class="patternCHK">
+								<input type="checkbox" name="patternCHK" />
+								<span class="figure">
+									<span>ABC가나다</span>
+								</span>
+								<strong>단답형</strong>
+							</label>
+						</li>
+						<li class="no5">
+							<label class="patternCHK">
+								<input type="checkbox" name="patternCHK" />
+								<span class="figure">
+									<span>1</span><span class="on">2</span><span>3</span><span>4</span>
+									<span class="txt">ABC가나다</span>
+								</span>
+								<strong>복합형</strong>
+							</label>
+						</li>
+						</ul>
+					</div>
+				</div>
+				<!-- //설문투표관리 유형 -->
+
+				<!-- 설문투표관리 등록 -->
+				<div id="svcPollsurvey_regist" class="svcPollsurvey_wrap"><!-- class "current" 추가 시 활성화 -->
+					<p class="title">
+						<i class="xi-angle-left-min" aria-hidden="true"></i> 찬성/반대
+						<span class="button">
+							<a href="#" class="regist">등록</a>
+							<!--
+							<a href="#" class="delete">삭제</a>
+							<a href="#" class="modify">수정</a>
+							-->
+						</span>
+					</p>
+					<div class="svcPollsurvey">
+						<div class="svcPollsurvey_iptForm" style="display:none">
+							<dl class="pollsurvey_lst">
+							<dt><label for="question">질문 <i class="compulsory">*</i></label></dt>
+							<dd>
+								<textarea id="question" name="question"></textarea>
+							</dd>
+							<!--
+							<dt>응답내용 <i class="compulsory">*</i></dt>
+							<dd>
+								<div class="select_box">
+									<label for="response">응답내용 선택</label>
+									<select class="info_select" id="response" title="응답내용 선택">
+									<option>응답내용 선택</option>
+									<option selected="selected">찬성</option>
+									<option>반대</option>
+									<option>기권</option>
+									</select>
+								</div>
+								<ul class="pollitem">
+								<li>찬성</li>
+								<li>반대</li>
+								<li>기권</li>
+								</ul>
+							</dd>
+							<dt>후보자 <i class="compulsory">*</i></dt>
+							<dd>
+								<div class="select_box">
+									<label for="response">후보자 선택</label>
+									<select class="info_select" id="response" title="후보자 선택">
+									<option>후보자 선택</option>
+									<option selected="selected">참가자1</option>
+									<option>참가자2</option>
+									<option>참가자3</option>
+									<option>참가자4</option>
+									</select>
+								</div>
+								<p class="candidateAdd">
+									<a href="#">선택추가</a>
+									<a href="#">전체추가</a>
+								</p>
+
+								<ul class="pollitem candidate_lst">
+								<li>
+									<span class="picture"><img src="../../images/system/profile_img.jpg" alt="제인" /></span>
+									<span class="name">참가자1</span>
+									<span class="btnDel"><a href="#"><i class="xi-close-min" aria-hidden="true"></i> <span class="hide">삭제</span></a></span>
+								</li>
+								<li>
+									<span class="picture"><i class="xi-user-o" aria-hidden="true"></i></span>
+									<span class="name">참가자2</span>
+									<span class="btnDel"><a href="#"><i class="xi-close-min" aria-hidden="true"></i> <span class="hide">삭제</span></a></span>
+								</li>
+								<li>
+									<span class="picture"><img src="../../images/system/profile_img.jpg" alt="제인" /></span>
+									<span class="name">참가자3</span>
+									<span class="btnDel"><a href="#"><i class="xi-close-min" aria-hidden="true"></i> <span class="hide">삭제</span></a></span>
+								</li>
+								<li>
+									<span class="picture"><img src="../../images/system/profile_img.jpg" alt="제인" /></span>
+									<span class="name">참가자4</span>
+									<span class="btnDel"><a href="#"><i class="xi-close-min" aria-hidden="true"></i> <span class="hide">삭제</span></a></span>
+								</li>
+								</ul>
+							</dd>
+							<dt>응답내용 <i class="compulsory">*</i></dt>
+							<dd>
+								<div class="pollitem_input">
+									<p class="btnPollitem">
+										<a href="#"><i class="xi-minus" aria-hidden="true"></i><span class="hide">삭제</span></a>
+										<a href="#"><i class="xi-plus" aria-hidden="true"></i><span class="hide">추가</span></a>
+									</p>
+									<ul class="pollitem">
+									<li><span class="num">1</span> <input type="text" name="pollitemIPT" value="" placeholder="내용입력" /></li>
+									<li><span class="num">2</span> <input type="text" name="pollitemIPT" value="" placeholder="내용입력" /></li>
+									<li><span class="num">3</span> <input type="text" name="pollitemIPT" value="" placeholder="내용입력" /></li>
+									<li><span class="num">4</span> <input type="text" name="pollitemIPT" value="" placeholder="내용입력" /></li>
+									</ul>
+									<div class="checkbox">
+										<label>
+											<input type="checkbox" name="submit_method" />
+											<i class="xi-checkbox" aria-hidden="true"></i><span>복수선택 허용</span>
+										</label>
+									</div>
+								</div>
+							</dd>
+							<dt>응답내용 <i class="compulsory">*</i></dt>
+							<dd>
+								<div class="control_input">
+									<strong>글자수 입력제한</strong>
+									<div class="control">
+										<input type="text" class="time_set" id="timeSet_ipt" name="timeSet_ipt" value="" placeholder="" /> byte
+									</div>
+								</div>
+							</dd>
+							-->
+							<dt>질문1 <i class="compulsory">*</i></dt>
+							<dd>
+								<div class="questionAdd">
+									<div class="radio">
+										<label>
+											<input type="radio" name="subjective" />
+											<i class="xi-radiobox" aria-hidden="true"></i><span>객관식</span>
+										</label>
+										<label>
+											<input type="radio" name="subjective" />
+											<i class="xi-radiobox" aria-hidden="true"></i><span>주관식</span>
+										</label>
+									</div>
+									<p class="delete"><a href="#">삭제</a></p>
+									<textarea id="question_subject" name="question_subject"></textarea>
+								</div>
+							</dd>
+							<dt>제출방식 <i class="compulsory">*</i></dt>
+							<dd>
+								<div class="radio">
+									<label>
+										<input type="radio" name="submit_method" />
+										<i class="xi-radiobox" aria-hidden="true"></i><span>기명</span>
+									</label>
+									<label>
+										<input type="radio" name="submit_method" />
+										<i class="xi-radiobox" aria-hidden="true"></i><span>무기명</span>
+									</label>
+								</div>
+							</dd>
+							<dt>시간설정 <i class="compulsory">*</i></dt>
+							<dd>
+								<div class="radio">
+									<label>
+										<input type="radio" name="timeSet" />
+										<i class="xi-radiobox" aria-hidden="true"></i>
+										<span>제약 없음</span>
+									</label>
+									<label>
+										<input type="radio" name="timeSet" />
+										<i class="xi-radiobox" aria-hidden="true"></i>
+										<span>시간 설정 <input type="text" class="time_set" id="timeSet_ipt" name="timeSet_ipt" value="" placeholder="" />초</span>
+									</label>
+								</div>
+							</dd>
+							<dt>결과보기 <i class="compulsory">*</i></dt>
+							<dd>
+								<div class="radio">
+									<label>
+										<input type="radio" name="public_method" />
+										<i class="xi-radiobox" aria-hidden="true"></i><span>공개</span>
+									</label>
+									<label>
+										<input type="radio" name="public_method" />
+										<i class="xi-radiobox" aria-hidden="true"></i><span>비공개</span>
+									</label>
+								</div>
+							</dd>
+							</dl>
+						</div>
+
+						<div class="svcPollsurvey_view" style="display:none">
+							<div class="pollsurvey_viewHeader">
+								<dl class="pollsurvey_lst">
+								<dt><label for="question">질문 <i class="compulsory">*</i></label></dt>
+								<dd><textarea id="question" name="question"></textarea></dd>
+								</dl>
+								<ul class="pollsurvey_guide">
+								<li><em>제출방식 </em>: 기명</li>
+								<li><em>진행시간 </em>: 120초</li>
+								<li><em>종료일시 </em>: 2017-11-01 10:10</li>
+								</ul>
+							</div>
+							<div class="pollsurvey_viewContents">
+								<dl class="pollsurvey_lst">
+								<dt>응답내용 <i class="compulsory">*</i></dt>
+								<dd>
+									<ul class="pollitem">
+									<li>찬성</li>
+									<li>반대</li>
+									<li>기권</li>
+									</ul>
+								</dd>
+								</dl>
+
+								<dl class="pollsurvey_lst pollComplete"><!-- 설문완료 시 -->
+								<dt>결과 <i class="compulsory">*</i></dt>
+								<dd>
+									<ul class="pollitem">
+									<li class="active">찬성 <em>6(60%)</em></li>
+									<li>반대 <em>1(10%)</em></li>
+									<li>기권 <em>3(30%)</em></li>
+									</ul>
+
+									<ul class="pollitem candidate_lst">
+									<li class="active">
+										<span class="picture"><img src="../../images/system/profile_img.jpg" alt="제인" /></span>
+										<span class="name">참가자1</span>
+										<em>6(60%)</em>
+									</li>
+									<li>
+										<span class="picture"><i class="xi-user-o" aria-hidden="true"></i></span>
+										<span class="name">참가자2</span>
+										<em>1(10%)</em>
+									</li>
+									<li>
+										<span class="picture"><img src="../../images/system/profile_img.jpg" alt="제인" /></span>
+										<span class="name">참가자3</span>
+										<em>2(20%)</em>
+									</li>
+									<li>
+										<span class="picture"><img src="../../images/system/profile_img.jpg" alt="제인" /></span>
+										<span class="name">참가자4</span>
+										<em>1(10%)</em>
+									</li>
+									</ul>
+									<p class="rate">전체 10 / 응답 10 / 참여율 100%</p>
+								</dd>
+								</dl>
+
+
+								<div class="elapseTime">
+									<strong><span><em id="time">00:60</em> 경과시간</span></strong>
+									<span class="respondent"><span><em>10</em> 대상자</span></span>
+									<span class="respondent"><span><em>9</em> 응답자</span></span>
+								</div>
+							</div>
+						</div>
+
+						<p class="btnPollsurvey">
+							<a href="#" class="start">시작</a>
+							<!--
+							<a href="#" class="again">다시 진행</a>
+							<a href="#" class="finish">종료</a>
+							<a href="#" class="submit">제출</a>
+							<a href="#" class="addquestion">질문추가</a>
+							-->
+						</p>
+					</div>
+				</div>
+				<!-- //설문투표관리 등록 -->
+
+				<!-- 회의록 -->
+				<div id="svcMinutes" class="svcMinutes_wrap"><!-- class "current" 추가 시 활성화 -->
+					<p class="title">
+						<i class="xi-angle-left-min" aria-hidden="true"></i> 회의록
+						<span class="button">
+							<a href="#" class="share active"><i class="xi-eye-o" aria-hidden="true"></i><span class="hide">회의록공유</span></a>
+							<a href="#" class="together"><i class="xi-mail-o" aria-hidden="true"></i><span class="hide">같이보기</span></a>
+						</span>
+					</p>
+					<div class="svcMinutes">
+						<form class="svcMinutesForm" id="svcMinutesForm">
+						<fieldset>
+						<legend>회의록 작성</legend>
+							<div class="svcMinutesForm_wrap">
+								<div class="subject">
+									<label for="subject_ipt" class="hide">주제입력</label>
+									<input type="text" id="subject_ipt" name="subject_ipt" placeholder="주제를 입력하세요." />
+									<textarea class="attendee_name" id="attendee_name" name="attendee_name" placeholder="참석자 이름 콤마(,)로 구분"></textarea>
+								</div>
+								<div class="svcMinutes_content">
+									<ul class="todo_lst">
+									<!-- 반복 -->
+									<li>
+										<div class="checkbox only_ipt">
+											<label>
+												<input type="checkbox" name="todoChk" />
+												<i class="xi-checkbox" aria-hidden="true"></i><span>완료</span>
+											</label>
+										</div>
+										<input type="text" id="todo_txt1" name="todo_txt1" placeholder="앞으로 할 일을 입력하세요" />
+									</li>
+									<!-- //반복 -->
+									<li>
+										<div class="checkbox only_ipt">
+											<label>
+												<input type="checkbox" name="todoChk" />
+												<i class="xi-checkbox" aria-hidden="true"></i><span>완료</span>
+											</label>
+										</div>
+										<input type="text" id="todo_txt2" name="todo_txt2" placeholder="앞으로 할 일을 입력하세요" />
+									</li>
+									<li>
+										<div class="checkbox only_ipt">
+											<label>
+												<input type="checkbox" name="todoChk" />
+												<i class="xi-checkbox" aria-hidden="true"></i><span>완료</span>
+											</label>
+										</div>
+										<input type="text" id="todo_txt3" name="todo_txt3" placeholder="앞으로 할 일을 입력하세요" />
+									</li>
+									</ul>
+									<div id="editor">
+										<textarea class="editor" id="editor_text" name="editor_text"></textarea>
+									</div>
+									<p class="btnMinutes">
+										<a href="#" class="regist"><span>작성완료</span></a>
+									</p>
+								</div>
+							</div>
+						</fieldset>
+						</form>
+					</div>
+				</div>
+				<!-- //회의록 -->
+			</div>
+		</aside>
+		<!-- //참석자, 공유컨텐츠, 채팅, 부가서비스(디바이스관리, 설문투표관리, 회의록) -->
+
+		<!-- 파일업로드 진행바 -->
+		<div class="progress"><!-- class="active" 추가 시 활성화 -->
+			<div class="progress-bar" role="progressbar" style="width:60%">
+				<span class="hide">60%</span>
+			</div>
+		</div>
+		<!-- //파일업로드 진행바 -->
+
+		<!-- 레이어팝업 -->
+		<div id="layerPopup" class=""><!-- class="active" 추가 시 활성화 -->
+			<!-- 콘텐츠 추가 -->
+			<div id="contentAdd" class="layerPopup_container" style="display:none">
+				<div class="layer_header">
+					<strong>콘텐츠 추가</strong>
+				</div>
+				<div class="layer_contents">
+					<ul class="tabMenu">
+					<li><a href="#" class="active">로컬자료</a></li>
+					<li><a href="#">공유된 자료</a></li>
+					<li><a href="#">웹 링크</a></li>
+					</ul>
+
+					<!-- 로컬자료 -->
+					<div class="localFile_wrap" style="display:block">
+						<p class="fileSel">
+							<a href="#"><span>로컬 파일 선택 <i class="xi-folder-add-o" aria-hidden="true"></i></span></a>
+						</p>
+						<p class="fileSel_desc">로컬에 저장된 이미지를 추가할 수 있습니다.<br/>(jpg, gif, png, bmp, svg 등)</p>
+
+						<ul class="localFile_lst">
+						<li>
+							<span class="file_exten ppt">P</span>
+							<span class="file_name"><em>파워포인트 업로드파일</em></span>
+							<span class="file_size">1.5mb</span>
+							<span class="btn_del"><a href="#"><i class="xi-close-min" aria-hidden="true"></i> <span class="hide">삭제</span></a></span>
+						</li>
+						<li>
+							<span class="file_exten xls">E</span>
+							<span class="file_name"><em>엑셀 업로드파일</em></span>
+							<span class="file_size">100kb</span>
+							<span class="btn_del"><a href="#"><i class="xi-close-min" aria-hidden="true"></i> <span class="hide">삭제</span></a></span>
+						</li>
+						<li>
+							<span class="file_exten doc">W</span>
+							<span class="file_name"><em>워드프로세서 업로드파일</em></span>
+							<span class="file_size">950kb</span>
+							<span class="btn_del"><a href="#"><i class="xi-close-min" aria-hidden="true"></i> <span class="hide">삭제</span></a></span>
+						</li>
+						<li>
+							<span class="file_exten img"><i class="xi-image-o" aria-hidden="true"></i></span>
+							<span class="file_name"><em>이미지 업로드파일</em></span>
+							<span class="file_size">100kb</span>
+							<span class="btn_del"><a href="#"><i class="xi-close-min" aria-hidden="true"></i> <span class="hide">삭제</span></a></span>
+						</li>
+						</ul>
+					</div>
+					<!-- //로컬자료 -->
+					<!-- 웹 링크 -->
+					<div class="webLink_wrap" style="display:none">
+						<p class="desc">이미지 및 동영상 링크를 추가할 수 있습니다.</p>
+						<div class="inputLink_add">
+							<textarea name="webLink_add"></textarea>
+						</div>
+						<p class="desc">동영상 링크는 아래와 같은 사이트를 지원합니다.</p>
+						<ul class="webLink_lst">
+						<li><a href="#" class="youtube">YOUTUBE</a></li>
+						<li><a href="#" class="ted">TED</a></li>
+						<li><a href="#" class="vimeo">VIMEO</a></li>
+						</ul>
+					</div>
+					<!-- //웹 링크 -->
+
+					<!-- 외부연계 -->
+					<div class="outsideConnet_wrap" style="display:none">
+						<p class="desc">외부 클라우드에 저장된 이미지를 추가할 수 있습니다.</p>
+						<p class="outsideConnet"><a href="#">Google Drive</a></p>
+					</div>
+					<!-- //외부연계 -->
+				</div>
+				<p class="btn_cntsAdd"><a href="#"><i class="xi-plus" aria-hidden="true"></i><span class="hide">컨텐츠 추가</span></a>
+				<p class="btn_close"><a href="#"><i class="xi-close" aria-hidden="true"></i><span class="hide">닫기</span></a>
+			</div>
+			<!-- //콘텐츠 추가 -->
+
+			<!-- 참석자 초대 -->
+			<div id="attendance_invit" class="layerPopup_container" style="display:none">
+				<div class="layer_header">
+					<strong>참석자 초대</strong>
+				</div>
+				<div class="layer_contents">
+					<ul class="tabMenu">
+					<li><a href="#" class="active">사용자 검색</a></li>
+					<li><a href="#">주소록 초대</a></li>
+					</ul>
+
+					<!-- 사용자 검색 -->
+					<div class="userSearch_wrap" style="display:block">
+						<form class="userSearch" id="userSearchForm">
+						<fieldset>
+						<legend>사용자 검색</legend>
+							<div class="userSearchFrm">
+								<label for="userSearch_keyword" class="hide">사용자 검색</label>
+								<input type="text" id="userSearch_keyword" name="userSearch_keyword" placeholder="이메일 또는 이름을 입력하세요." />
+								<a href="#" class="userAdd"><i class="xi-plus" aria-hidden="true"></i><span class="hide">추가</span></a>
+							</div>
+						</fieldset>
+						</form>
+						<!-- 자동완성 -->
+						<div class="autocomplete"><!-- 활성화 "active" 추가 -->
+							<ul class="autocomplete_lst">
+							<li><a href="#">홍길동 (abcd@naver.com)</a></li>
+							<li><a href="#">홍길동1 (abcd1@incloud.kr)</a></li>
+							<li><a href="#">홍길동2 (abcd2@incloud.kr)</a></li>
+							</ul>
+						</div>
+						<!-- //자동완성 -->
+
+						<div class="userSearch_lst">
+							<ul>
+							<li>
+								<a href="#">홍길동 (abcd@naver.com)</a>
+								<p class="del"><a href="#"><i class="xi-close" aria-hidden="true"></i><span class="hide">닫기</span></a></p>
+							</li>
+							<li>
+								<a href="#">홍길동1 (abcd1@incloud.kr)</a>
+								<p class="del"><a href="#"><i class="xi-close" aria-hidden="true"></i><span class="hide">닫기</span></a></p>
+							</li>
+							<li>
+								<div class="nolst_wrap">
+									<p class="noarticle">선택된 사용자가 없습니다.</p>
+								</div>
+							</li>
+							</ul>
+						</div>
+					</div>
+					<!-- //사용자 검색 -->
+					<!-- 주소록 초대 -->
+					<div class="addressBook_wrap" style="display:none">
+						<div class="title">
+							<strong>주소록</strong> <span class="select"><em>0</em>명 선택됨</span>
+							<div class="checkbox">
+								<label>
+									<input type="checkbox" name="addressSel" />
+									<i class="xi-checkbox" aria-hidden="true"></i><span>전체선택</span>
+								</label>
+							</div>
+						</div>
+						<div class="addressBook_lst">
+							<div class="addressBook_folder">
+								<ul>
+								<li><a href="#" class="active"><i class="xi-folder-o" aria-hidden="true"></i> 인클라우드 <em>8</em></a></li>
+								<li><a href="#"><i class="xi-folder-o" aria-hidden="true"></i> 전략기획팀 <em>10</em></a></li>
+								<li><a href="#"><i class="xi-folder-o" aria-hidden="true"></i> 클라우드코리아 <em>20</em></a></li>
+								<li><a href="#"><i class="xi-folder-o" aria-hidden="true"></i> 인크라우드 <em>5</em></a></li>
+								<li><a href="#"><i class="xi-folder-o" aria-hidden="true"></i> 디자인팀 <em>5</em></a></li>
+								</ul>
+								<span class="loading"><i class="xi-spinner-2 xi-spin" aria-hidden="true"></i> <span>Loading</span></span>
+							</div>
+							<div class="addressBook">
+								<ul>
+								<li>
+									<div class="checkbox">
+										<label>
+											<input type="checkbox" name="addressSel" />
+											<i class="xi-checkbox" aria-hidden="true"></i><span>홍길동1</span>
+										</label>
+									</div>
+									<a href="#" class="invit_Add"><i class="xi-plus" aria-hidden="true"></i><span class="hide">구성원 초대</span></a>
+								</li>
+								<li>
+									<div class="checkbox">
+										<label>
+											<input type="checkbox" name="addressSel" />
+											<i class="xi-checkbox" aria-hidden="true"></i><span>홍길동2</span>
+										</label>
+									</div>
+									<a href="#" class="invit_Add"><i class="xi-plus" aria-hidden="true"></i><span class="hide">구성원 초대</span></a>
+								</li>
+								<li>
+									<div class="checkbox">
+										<label>
+											<input type="checkbox" name="addressSel" />
+											<i class="xi-checkbox" aria-hidden="true"></i><span>홍길동3</span>
+										</label>
+									</div>
+									<a href="#" class="invit_Add"><i class="xi-plus" aria-hidden="true"></i><span class="hide">구성원 초대</span></a>
+								</li>
+								<li>
+									<div class="checkbox">
+										<label>
+											<input type="checkbox" name="addressSel" />
+											<i class="xi-checkbox" aria-hidden="true"></i><span>홍길동4</span>
+										</label>
+									</div>
+									<a href="#" class="invit_Add"><i class="xi-plus" aria-hidden="true"></i><span class="hide">구성원 초대</span></a>
+								</li>
+								<li>
+									<div class="checkbox">
+										<label>
+											<input type="checkbox" name="addressSel" />
+											<i class="xi-checkbox" aria-hidden="true"></i><span>홍길동5</span>
+										</label>
+									</div>
+									<a href="#" class="invit_Add"><i class="xi-plus" aria-hidden="true"></i><span class="hide">구성원 초대</span></a>
+								</li>
+								<li>
+									<div class="checkbox">
+										<label>
+											<input type="checkbox" name="addressSel" />
+											<i class="xi-checkbox" aria-hidden="true"></i><span>홍길동6</span>
+										</label>
+									</div>
+									<a href="#" class="invit_Add"><i class="xi-plus" aria-hidden="true"></i><span class="hide">구성원 초대</span></a>
+								</li>
+								</ul>
+								<span class="loading"><i class="xi-spinner-2 xi-spin" aria-hidden="true"></i> <span>Loading</span></span>
+							</div>
+						</div>
+					</div>
+					<!-- //주소록 초대 -->
+				</div>
+				<p class="btn_attendanceAdd"><a href="#"><i class="xi-plus" aria-hidden="true"></i><span class="hide">참석자 초대</span></a>
+				<p class="btn_close"><a href="#"><i class="xi-close" aria-hidden="true"></i><span class="hide">닫기</span></a>
+			</div>
+			<!-- //참석자 초대 -->
+
+			<!-- 공유노트다운로드 -->
+			<div id="sharenoteDownload" class="layerPopup_container" style="display:none">
+				<div class="layer_header">
+					<strong>공유노트 다운로드</strong>
+				</div>
+				<div class="layer_contents">
+					<div class="sharenoteDownload" style="display:block">
+						<form id="sharenoteSelForm">
+						<fieldset>
+						<legend>유형 및 범위 선택</legend>
+							<div class="sharenoteSel">
+								<div class="sharenoteSel_type">
+									<strong>유형선택</strong>
+									<div class="radio">
+										<label>
+											<input type="radio" name="typeSel" />
+											<i class="xi-radiobox" aria-hidden="true"></i><span>이미지 (PNG)</span>
+										</label>
+										<label>
+											<input type="radio" name="typeSel" />
+											<i class="xi-radiobox" aria-hidden="true"></i><span>문서 (PDF)</span>
+										</label>
+									</div>
+								</div>
+								<div class="sharenoteSel_scope">
+									<strong>범위선택</strong>
+									<div class="radio">
+										<label>
+											<input type="radio" name="scopeSel" />
+											<i class="xi-radiobox" aria-hidden="true"></i><span>현재 페이지</span>
+										</label>
+										<label>
+											<input type="radio" name="scopeSel" />
+											<i class="xi-radiobox" aria-hidden="true"></i><span>전체 페이지</span>
+										</label>
+									</div>
+								</div>
+							</div>
+							<div class="btns_wrap">
+								<p class="btns"><a href="#">변환</a></p>
+							</div>
+						</fieldset>
+						</form>
+					</div>
+
+					<div class="sharenoteDownload" style="display:block">
+						<div class="sharenoteChange">
+							<span class="loading"><i class="xi-spinner-2 xi-spin" aria-hidden="true"></i> <span class="hide">Loading</span></span>
+							<strong>PNG로 변환(1/1)</strong>
+							<!-- 변환완료 시 -->
+							<p class="desc">현재페이지의 이미지(PNG)로 변환이 완료되었습니다.</p>
+							<!-- //변환완료 시 -->
+							<div class="btns_wrap">
+								<p class="btns">
+									<a href="#" class="cancel">취소</a>
+									<!-- 변환완료 시 --><a href="#">다운로드</a><!-- //변환완료 시 -->
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<p class="btn_close"><a href="#"><i class="xi-close" aria-hidden="true"></i><span class="hide">닫기</span></a>
+			</div>
+			<!-- //공유노트다운로드 -->
+
+			<!-- 공유노트이메일전송 -->
+			<div id="sharenoteEmail" class="layerPopup_container" style="display:none">
+				<div class="layer_header">
+					<strong>공유노트 이메일 전송</strong>
+				</div>
+				<div class="layer_contents">
+					<!-- 유형 및 범위선택은 공유노트 다운로드와 동일 -->
+					<div class="sharenoteDownload" style="display:none">
+						유형 및 범위선택은 공유노트 다운로드와 동일
+
+						<div class="sharenoteChange">
+							<span class="loading"><i class="xi-spinner-2 xi-spin" aria-hidden="true"></i> <span class="hide">Loading</span></span>
+							<strong>PNG로 변환(1/1)</strong>
+							<!-- 변환완료 시 -->
+							<p class="desc">현재페이지의 이미지(PNG)로 변환이 완료되었습니다.</p>
+							<!-- //변환완료 시 -->
+							<div class="btns_wrap">
+								<p class="btns">
+									<a href="#" class="cancel">취소</a>
+									<!-- 변환완료 시 --><a href="#">메시지 작성</a><!-- //변환완료 시 -->
+								</p>
+							</div>
+						</div>
+					</div>
+
+					<!-- 사용자 검색 -->
+					<div class="userSearch_wrap" style="display:block">
+						<form class="userSearch" id="userSearchForm">
+						<fieldset>
+						<legend>사용자 검색</legend>
+							<textarea class="delivery_content" id="deliveryCnt" name="deliveryCnt" placeholder="전달할 내용을 입력하세요."></textarea>
+							<strong>받는 사람</strong>
+							<div class="userSearchFrm">
+								<label for="recipient" class="hide">사용자 검색</label>
+								<input type="text" id="recipient" name="recipient" placeholder="이메일 또는 이름을 입력하세요." />
+								<a href="#" class="userAdd"><i class="xi-plus" aria-hidden="true"></i><span class="hide">추가</span></a>
+							</div>
+						</fieldset>
+						</form>
+						<!-- 자동완성 -->
+						<div class="autocomplete"><!-- 활성화 "active" 추가 -->
+							<ul class="autocomplete_lst">
+							<li><a href="#">홍길동 (abcd@naver.com)</a></li>
+							<li><a href="#">홍길동1 (abcd1@incloud.kr)</a></li>
+							<li><a href="#">홍길동2 (abcd2@incloud.kr)</a></li>
+							</ul>
+						</div>
+						<!-- //자동완성 -->
+
+						<div class="userSearch_lst">
+							<ul>
+							<li>
+								<a href="#">홍길동 (abcd@naver.com)</a>
+								<p class="del"><a href="#"><i class="xi-close" aria-hidden="true"></i><span class="hide">닫기</span></a></p>
+							</li>
+							<li>
+								<a href="#">홍길동1 (abcd1@incloud.kr)</a>
+								<p class="del"><a href="#"><i class="xi-close" aria-hidden="true"></i><span class="hide">닫기</span></a></p>
+							</li>
+							<li>
+								<div class="nolst_wrap">
+									<p class="noarticle">선택된 사용자가 없습니다.</p>
+								</div>
+							</li>
+							</ul>
+						</div>
+
+						<div class="btns_wrap">
+							<p class="btns">
+								<a href="#"><i class="xi-telegram" aria-hidden="true"></i> 메시지 보내기</a>
+							</p>
+						</div>
+					</div>
+					<!-- //사용자 검색 -->
+				</div>
+				<p class="btn_close"><a href="#"><i class="xi-close" aria-hidden="true"></i><span class="hide">닫기</span></a>
+			</div>
+			<!-- //공유노트이메일전송 -->
+
+			<!-- 회의록공유 -->
+			<div id="minutesShare" class="layerPopup_container" style="display:none">
+				<div class="layer_header">
+					<strong>회의록 공유</strong>
+				</div>
+				<div class="layer_contents">
+					<!-- 사용자 검색 -->
+					<div class="userSearch_wrap" style="display:block">
+						<form class="userSearch" id="userSearchForm">
+						<fieldset>
+						<legend>사용자 검색</legend>
+							<strong>회의록을 이메일로 공유합니다.</strong>
+							<div class="userSearchFrm">
+								<label for="recipient" class="hide">사용자 검색</label>
+								<input type="text" id="recipient" name="recipient" placeholder="이메일 또는 이름을 입력하세요." />
+								<a href="#" class="userAdd"><i class="xi-plus" aria-hidden="true"></i><span class="hide">추가</span></a>
+							</div>
+						</fieldset>
+						</form>
+						<!-- 자동완성 -->
+						<div class="autocomplete"><!-- 활성화 "active" 추가 -->
+							<ul class="autocomplete_lst">
+							<li><a href="#">홍길동 (abcd@naver.com)</a></li>
+							<li><a href="#">홍길동1 (abcd1@incloud.kr)</a></li>
+							<li><a href="#">홍길동2 (abcd2@incloud.kr)</a></li>
+							</ul>
+						</div>
+						<!-- //자동완성 -->
+						<div class="userSearch_lst">
+							<ul>
+							<li>
+								<a href="#">홍길동 (abcd@naver.com)</a>
+								<p class="del"><a href="#"><i class="xi-close" aria-hidden="true"></i><span class="hide">닫기</span></a></p>
+							</li>
+							<li>
+								<a href="#">홍길동1 (abcd1@incloud.kr)</a>
+								<p class="del"><a href="#"><i class="xi-close" aria-hidden="true"></i><span class="hide">닫기</span></a></p>
+							</li>
+							<li>
+								<div class="nolst_wrap">
+									<p class="noarticle">선택된 사용자가 없습니다.</p>
+								</div>
+							</li>
+							</ul>
+						</div>
+						<div class="attachFileChk">
+							<div class="checkbox">
+								<label>
+									<input type="checkbox" name="addressSel" />
+									<i class="xi-checkbox" aria-hidden="true"></i><span>현재 공유문서 첨부(PDF)</span>
+								</label>
+							</div>
+						</div>
+
+						<div class="btns_wrap">
+							<p class="btns">
+								<a href="#"><i class="xi-telegram" aria-hidden="true"></i> 메시지 보내기</a>
+							</p>
+						</div>
+					</div>
+					<!-- //사용자 검색 -->
+				</div>
+				<p class="btn_close"><a href="#"><i class="xi-close" aria-hidden="true"></i><span class="hide">닫기</span></a>
+			</div>
+			<!-- //회의록공유 -->
+		</div>
+		<!-- //레이어팝업 -->
+	</div>
+
+	<hr/>
+
+	<footer id="footer" class="current"><!-- class="current" 추가시 사용가능 -->
+		<div class="contentMode_wrap">
+			<p class="content_mode">
+				<a href="#" class="all"><i class="xi-all" aria-hidden="true"></i><span class="tooltip"><em>무한 화면모드</em></span></a>
+				<a href="#" class="disable"><i class="xi-browser" aria-hidden="true"></i><span class="tooltip"><em>유한 화면모드</em></span></a>
+			</p>
+			<p class="content_fit">
+				<a href="#" class="full"><i class="xi-overscan" aria-hidden="true"></i><span class="tooltip"><em>전체</em></span></a>
+				<a href="#"><i class="xi-arrows-h" aria-hidden="true"></i><span class="tooltip"><em>가로기준</em></span></a>
+				<a href="#"><i class="xi-arrows-v" aria-hidden="true"></i><span class="tooltip"><em>세로기준</em></span></a>
+			</p>
+			<p class="content_zoom">
+				<a href="#"><i class="xi-plus-circle-o" aria-hidden="true"></i><em>100%</em><span class="tooltip"><em>ZOOM</em></span></a>
+				<span id="zoom" class="layer">
+					<span class="layer_wrap">
+						<strong>ZOOM In/Out</strong>
+						<span class="bar"><i class="bar_mark" style="left:20%"></i><span class="value">20%</span></span>
+					</span>
+				</span>
+			</p>
+			<p class="content_paging">
+				<span class="ctrl">
+					<a href="#" class="prev"><i class="xi-angle-left" aria-hidden="true"></i></a>
+					<a href="#" class="next"><i class="xi-angle-right" aria-hidden="true"></i></a>
+				</span>
+				<a href="#" class="total"><i class="xi-documents-o" aria-hidden="true"></i><em>1/200</em></a>
+				<a href="#" class="page"><i class="xi-documents-o" aria-hidden="true"></i><em>1</em></a>
+				<a href="#" class="page deactive"><i class="xi-documents-o" aria-hidden="true"></i><em>2</em></a>
+				<a href="#" class="page active"><i class="xi-documents-o" aria-hidden="true"></i><em>3</em></a>
+				<a href="#" class="page"><i class="xi-documents-o" aria-hidden="true"></i><em>4</em></a>
+				<a href="#" class="page"><i class="xi-documents-o" aria-hidden="true"></i><em>5</em></a>
+				<a href="#" class="page"><i class="xi-documents-o" aria-hidden="true"></i><em>6</em></a>
+				<a href="#" class="page"><i class="xi-documents-o" aria-hidden="true"></i><em>+</em></a>
+			</p>
+		</div>
+		<div class="contextSetup_wrap">
+			<div class="contextSetup_lst">
+				<p class="context_move"><a href="#" class="active"><i class="xi-arrows" aria-hidden="true"></i><span class="tooltip"><em>이동</em></span></a></p>
+				<p class="context_pointer"><a href="#"><i class="xi-mouse-pointer" aria-hidden="true"></i><span class="tooltip"><em>선택</em></span></a></p>
+				<p class="context_pen"><!-- class "active" 추가 시 활성화 -->
+					<a href="#" class="basicPen"><i class="xi-pen-o" aria-hidden="true"></i><span class="tooltip"><em>일반펜</em></span></a>
+					<a href="#" class="lineWidth"><i class="pen-line-width" aria-hidden="true"></i><em class="no5">5px</em><span class="tooltip"><em>굵기</em></span></a>
+					<a href="#" class="color"><i class="pen-color" aria-hidden="true"></i><em class="no2">Bright Red</em><span class="tooltip"><em>색상</em></span></a>
+
+					<span id="pen_lineWidth" class="layer">
+						<span class="layer_wrap">
+							<strong>굵기</strong>
+							<span class="lineWidth_wrap">
+								<span class="pen_lineWidth no1"><a href="#"><em>1px</em></a></span>
+								<span class="pen_lineWidth no2"><a href="#"><em>2px</em></a></span>
+								<span class="pen_lineWidth no3"><a href="#"><em>3px</em></a></span>
+								<span class="pen_lineWidth no4"><a href="#"><em>5px</em></a></span>
+								<span class="pen_lineWidth no5"><a href="#"><em>7px</em></a></span>
+							</span>
+						</span>
+					</span>
+					<span id="pen_color" class="layer">
+						<span class="layer_wrap">
+							<strong>색상</strong>
+							<span class="color_wrap">
+								<span class="pen_color no1"><a href="#"><em>Black</em></a></span>
+								<span class="pen_color no2"><a href="#"><em>Bright Red</em></a></span>
+								<span class="pen_color no3"><a href="#"><em>Lime Green</em></a></span>
+								<span class="pen_color no4"><a href="#"><em>Light Yellow</em></a></span>
+								<span class="pen_color no5"><a href="#"><em>White</em></a></span>
+								<span class="pen_color no6"><a href="#"><em>Bright Green</em></a></span>
+								<span class="pen_color no7"><a href="#"><em>Vivid Blue</em></a></span>
+								<span class="pen_color no8"><a href="#"><em>Dark Magenta</em></a></span>
+								<span class="pen_color no9"><a href="#"><em>Orange</em></a></span>
+								<span class="pen_color select"><a href="#"><em>Color선택</em></a></span>
+							</span>
+						</span>
+					</span>
+				</p>
+				<p class="context_highlighter"><!-- class "active" 추가 시 활성화 -->
+					<a href="#" class="highlighter"><i class="gp-marker" aria-hidden="true"></i><span class="tooltip"><em>형광펜</em></span></a>
+					<a href="#" class="lineWidth"><i class="pen-line-width" aria-hidden="true"></i><em class="no5">5px</em><span class="tooltip"><em>굵기</em></span></a>
+					<a href="#" class="color"><i class="pen-color" aria-hidden="true"></i><em class="no7">Vivid Blue</em><span class="tooltip"><em>색상</em></span></a>
+
+					<span id="highlight_pen_lineWidth" class="layer">
+						<span class="layer_wrap">
+							<strong>굵기</strong>
+							<span class="lineWidth_wrap">
+								<span class="pen_lineWidth no1"><a href="#"><em>1px</em></a></span>
+								<span class="pen_lineWidth no2"><a href="#"><em>2px</em></a></span>
+								<span class="pen_lineWidth no3"><a href="#"><em>3px</em></a></span>
+								<span class="pen_lineWidth no4"><a href="#"><em>5px</em></a></span>
+								<span class="pen_lineWidth no5"><a href="#"><em>7px</em></a></span>
+							</span>
+
+							<strong>투명도</strong>
+							<span class="bar"><i class="bar_mark" style="left:50%"></i><span class="value">50%</span></span>
+						</span>
+					</span>
+					<span id="highlight_color" class="layer">
+						<span class="layer_wrap">
+							<strong>색상</strong>
+							<span class="color_wrap">
+								<span class="pen_color no1"><a href="#"><em>Black</em></a></span>
+								<span class="pen_color no2"><a href="#"><em>Bright Red</em></a></span>
+								<span class="pen_color no3"><a href="#"><em>Lime Green</em></a></span>
+								<span class="pen_color no4"><a href="#"><em>Light Yellow</em></a></span>
+								<span class="pen_color no5"><a href="#"><em>White</em></a></span>
+								<span class="pen_color no6"><a href="#"><em>Bright Green</em></a></span>
+								<span class="pen_color no7"><a href="#"><em>Vivid Blue</em></a></span>
+								<span class="pen_color no8"><a href="#"><em>Dark Magenta</em></a></span>
+								<span class="pen_color no9"><a href="#"><em>Orange</em></a></span>
+								<span class="pen_color select"><a href="#"><em>Color선택</em></a></span>
+							</span>
+						</span>
+					</span>
+				</p>
+
+				<p class="context_figure"><!-- class "active" 추가 시 활성화 -->
+					<a href="#" class="figure"><i class="gp-figure" aria-hidden="true"></i><span class="tooltip"><em>도형</em></span></a>
+					<a href="#" class="figureType"><i class="figure-plane" aria-hidden="true"></i><em>■</em><span class="tooltip"><em>도형</em></span></a>
+					<a href="#" class="lineWidth"><i class="figure-line-width" aria-hidden="true"></i><em class="no5">5px</em><span class="tooltip"><em>굵기</em></span></a>
+					<a href="#" class="color"><i class="figure-color" aria-hidden="true"></i><em class="no9">Orange</em><span class="tooltip"><em>색상</em></span></a>
+
+					<span id="figure_plane" class="layer">
+						<span class="layer_wrap">
+							<strong>도형</strong>
+							<span class="planeFigure_wrap">
+								<span class="planeFigure no1"><a href="#"><em>/</em></a></span>
+								<span class="planeFigure no2"><a href="#"><em>□</em></a></span>
+								<span class="planeFigure no3"><a href="#"><em>△</em></a></span>
+								<span class="planeFigure no4"><a href="#"><em>○</em></a></span>
+								<span class="planeFigure no5"><a href="#"><em>↗</em></a></span>
+								<span class="planeFigure no6"><a href="#"><em>■</em></a></span>
+								<span class="planeFigure no7"><a href="#"><em>▲</em></a></span>
+								<span class="planeFigure no8"><a href="#"><em>●</em></a></span>
+							</span>
+						</span>
+					</span>
+					<span id="figure_pen_lineWidth" class="layer">
+						<span class="layer_wrap">
+							<strong>굵기</strong>
+							<span class="lineWidth_wrap">
+								<span class="pen_lineWidth no1"><a href="#"><em>1px</em></a></span>
+								<span class="pen_lineWidth no2"><a href="#"><em>2px</em></a></span>
+								<span class="pen_lineWidth no3"><a href="#"><em>3px</em></a></span>
+								<span class="pen_lineWidth no4"><a href="#"><em>5px</em></a></span>
+								<span class="pen_lineWidth no5"><a href="#"><em>7px</em></a></span>
+							</span>
+						</span>
+					</span>
+					<span id="figure_color" class="layer">
+						<span class="layer_wrap">
+							<strong>색상</strong>
+							<span class="color_wrap">
+								<span class="pen_color no1"><a href="#"><em>Black</em></a></span>
+								<span class="pen_color no2"><a href="#"><em>Bright Red</em></a></span>
+								<span class="pen_color no3"><a href="#"><em>Lime Green</em></a></span>
+								<span class="pen_color no4"><a href="#"><em>Light Yellow</em></a></span>
+								<span class="pen_color no5"><a href="#"><em>White</em></a></span>
+								<span class="pen_color no6"><a href="#"><em>Bright Green</em></a></span>
+								<span class="pen_color no7"><a href="#"><em>Vivid Blue</em></a></span>
+								<span class="pen_color no8"><a href="#"><em>Dark Magenta</em></a></span>
+								<span class="pen_color no9"><a href="#"><em>Orange</em></a></span>
+								<span class="pen_color select"><a href="#"><em>Color선택</em></a></span>
+							</span>
+						</span>
+					</span>
+				</p>
+
+				<p class="context_text"><!-- class "active" 추가 시 활성화 -->
+					<a href="#" class="Caps"><i class="xi-caps" aria-hidden="true"></i><span class="tooltip"><em>텍스트</em></span></a>
+					<a href="#" class="txtSize"><i class="text-size" aria-hidden="true"></i><em>12</em><span class="tooltip"><em>사이즈</em></span></a>
+					<a href="#" class="txtStyle"><i class="text-style" aria-hidden="true"></i><em class="no2">B</em><span class="tooltip"><em>스타일</em></span></a>
+					<a href="#" class="color"><i class="text-color" aria-hidden="true"></i><em class="no4">Light Yellow</em><span class="tooltip"><em>색상</em></span></a>
+
+					<span id="text_array" class="layer">
+						<span class="layer_wrap">
+							<strong>정렬</strong>
+							<span class="textArray_wrap">
+								<span class="text_array no1"><a href="#"><em>좌측</em></a></span>
+								<span class="text_array no2"><a href="#"><em>중앙</em></a></span>
+								<span class="text_array no3"><a href="#"><em>우측</em></a></span>
+								<span class="text_array no4"><a href="#"><em>양측</em></a></span>
+							</span>
+						</span>
+					</span>
+					<span id="text_size" class="layer">
+						<span class="layer_wrap">
+							<strong>크기</strong>
+							<span class="textSize_wrap">
+								<span class="text_size no1"><a href="#">10px</a></span>
+								<span class="text_size no2"><a href="#">12px</a></span>
+								<span class="text_size no3"><a href="#">14px</a></span>
+								<span class="text_size no4"><a href="#">16px</a></span>
+								<span class="text_size no5"><a href="#">18px</a></span>
+								<span class="text_size no6"><a href="#">20px</a></span>
+								<span class="text_size no7"><a href="#">24px</a></span>
+							</span>
+						</span>
+					</span>
+					<span id="text_style" class="layer">
+						<span class="layer_wrap">
+							<strong>스타일</strong>
+							<span class="textStyle_wrap">
+								<span class="text_style no1"><a href="#"><em>밑줄</em></a></span>
+								<span class="text_style no2"><a href="#"><em>볼드</em></a></span>
+								<span class="text_style no3"><a href="#"><em>이태릭</em></a></span>
+							</span>
+						</span>
+					</span>
+					<span id="text_color" class="layer">
+						<span class="layer_wrap">
+							<strong>색상</strong>
+							<span class="color_wrap">
+								<span class="pen_color no1"><a href="#"><em>Black</em></a></span>
+								<span class="pen_color no2"><a href="#"><em>Bright Red</em></a></span>
+								<span class="pen_color no3"><a href="#"><em>Lime Green</em></a></span>
+								<span class="pen_color no4"><a href="#"><em>Light Yellow</em></a></span>
+								<span class="pen_color no5"><a href="#"><em>White</em></a></span>
+								<span class="pen_color no6"><a href="#"><em>Bright Green</em></a></span>
+								<span class="pen_color no7"><a href="#"><em>Vivid Blue</em></a></span>
+								<span class="pen_color no8"><a href="#"><em>Dark Magenta</em></a></span>
+								<span class="pen_color no9"><a href="#"><em>Orange</em></a></span>
+								<span class="pen_color select"><a href="#"><em>Color선택</em></a></span>
+							</span>
+						</span>
+					</span>
+				</p>
+				<p class="context_eraser">
+					<a href="#" class="eraser"><i class="xi-eraser" aria-hidden="true"></i><span class="tooltip"><em>지우기</em></span></a>
+					<a href="#" class="eraser_tot"><i class="xi-eraser-o" aria-hidden="true"></i><span class="tooltip"><em>전체지우기</em></span></a>
+					<a href="#" class="eraser_part"><i class="xi-eraser" aria-hidden="true"></i><span class="tooltip"><em>부분지우기</em></span></a>
+				</p>
+				<p class="context_image">
+					<a href="#"><i class="xi-image-o" aria-hidden="true"></i><span class="tooltip"><em>이미지</em></span></a>
+				</p>
+				<p class="context_rotate">
+					<a href="#"><i class="xi-undo" aria-hidden="true"></i><span class="tooltip"><em>풀다</em></span></a>
+					<a href="#"><i class="xi-redo" aria-hidden="true"></i><span class="tooltip"><em>다시</em></span></a>
+				</p>
+			</div>
+
+			<div class="context_contentAdd">
+				<a href="#"><i class="xi-plus" aria-hidden="true"></i><span class="tooltip"><em>추가</em></span></a>
+				<ul class="dropdown-menu" role="menu">
+				<li><a href="#">참가자 초대</a></li>
+				<li><a href="#">빈 노트 추가</a></li>
+				<li><a href="#">로컬파일 추가</a></li>
+				<li><a href="#">구글 드라이브</a></li>
+				<li><a href="#">유튜브</a></li>
+				</ul>
+			</div>
+		</div>
+
+		<p class="copyright hide">2017 &copy; InCLOUD Co.,Ltd. All Rights Reserved.</p>
+	</footer>
+</div>
+</body>
+</html>

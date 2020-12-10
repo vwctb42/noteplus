@@ -1,0 +1,59 @@
+@charset "utf-8";
+/* Web Standardization Team, Author:JongWoon,LEE 2017.11.14 */
+
+/**/
+.radio label,.checkbox label{padding-left:0;padding-right:1.5rem}
+.radio label input,.checkbox label input,.radio label [class*="xi-"],.checkbox label [class*="xi-"]{left:auto;right:0}
+.radio span,.checkbox span{float:right}
+.dropdown-menu:after{right:auto;left:-0.75rem;border-left-color:transparent;border-right-color:#fff}
+.dropdown-menu > li > a{text-align:right}
+#addService [class*="btn_"]{right:auto;left:1.25rem}
+
+/*참석자*/
+#attendance{text-align:right}
+#attendance > .title > .more{right:0;left:1.25rem}
+.attendance_lst > li{padding-right:0;padding-left:2.875rem}
+.attendance_lst > li .picture{float:right}
+.attendance_lst > li .name{margin-left:0;margin-right:2.25rem}
+.attendance_lst .dropdown-menu{right:auto;left:3.5rem}
+.attendance_search > input{padding:0 1.25rem 0 2.8125rem;text-align:right}
+.attendance_search > .submit{right:auto;left:0.9375rem}
+/*공유컨텐츠*/
+#shareContents{text-align:right}
+#shareContents > .share_lst a > i[class*="xi-"]{float:right;margin-right:auto;margin-left:0.625rem}
+.shareContents_lst > ul > li{padding-right:0;padding-left:2.875rem;text-align:right}
+.shareContents_lst .file_exten{float:right}
+.shareContents_lst .file_name{margin-left:0;margin-right:2.25rem}
+.shareContents_lst .file_name > .count > [class*="xi-"]{float:right;margin:0.1875rem 0 0 0.25rem}
+.shareContents_lst .fileName_change{text-align:right}
+/*채팅*/
+#chatting{text-align:right}
+.chat_wrap > .chat_notice{padding:0.5625rem 2.5rem 0.5625rem 5.3125rem}
+.chat_notice > i[class*="xi-"]{left:auto;right:1rem}
+.chat_notice > .date{right:auto;left:1.25rem}
+.chat_wrap .chat_item{text-align:left}
+.chat_item.mine .message_content{text-align:right}
+.chat_wrap .secret > .chat_item.mine .message_content{text-align:right}
+.chatForm > .chat_iptForm{padding-right:0;padding-left:3.75rem}
+.chatForm > .chat_iptForm > .message_input{padding:0.5rem 1.25rem 0.5rem 0;text-align:right}
+.chatForm > .chat_iptForm > .submit{right:auto;left:0}
+/*공유노트*/
+#shareNote{text-align:right}
+.shareNote_menu > .shareNote_lst a > i[class*="xi-"]{float:right;margin-right:0;margin-left:0.625rem}
+/*부가서비스*/
+#additionalSVC{text-align:right}
+#additionalSVC > [id*="svc"] > .title{text-align:left}
+.additionalSVC_menu > .additionalSVC_lst a > i[class*="xi-"]{float:right;margin-right:0;margin-left:0.625rem}
+.svcDeviceManage_lst > li{padding-right:0;padding-left:8.125rem}
+.svcDeviceManage_lst > li .picture{float:right}
+.svcDeviceManage_lst > li .name{margin-left:0;margin-right:2.25rem}
+.svcDeviceManage .btn_management > a{float:right}
+.svcDeviceManage .btn_function > a{float:right}
+.svcDeviceManage .dropdown-menu{right:auto;left:3.5rem}
+.svcPollsurvey_lst > li > a{padding:0.625rem 1.25rem 0.625rem 3.5rem}
+.svcPollsurvey_lst .dropdown-menu{right:auto;left:3.5rem}
+.svcPollsurvey_view{text-align:left}
+.svcPollsurvey_wrap > .svcPollsurvey{text-align:left}
+.svcMinutes input[type="text"],.svcMinutes textarea{text-align:right}
+.svcMinutes .todo_lst > li{padding-left:0;padding-right:1.25rem}
+.svcMinutes .todo_lst .checkbox{left:auto;right:0}

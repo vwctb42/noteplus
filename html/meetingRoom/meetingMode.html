@@ -1,0 +1,262 @@
+<!DOCTYPE HTML>
+<html lang="kr">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Pragma" content="no-cache" />
+<meta http-equiv="Cache-Control" content="no-cache" /> 
+<meta http-equiv="expires" content="0" />
+<meta http-equiv="content-language" content="kr" />
+<meta http-equiv="imagetoolbar" content="no" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="format-detection" content="telephone=no,email=no,address=no" />
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scaleable=yes" />
+<meta name="author" content="온라인멘토링시스템" />
+<meta name="Keywords" content="온라인멘토링시스템" />
+<meta name="description" content="아이디어와 콘텐츠를 실시간으로 공유하는 비주얼 커뮤니케이션" />
+<meta name="copyright" content="(35261) 대전광역시 서구 문정로 22 충렬공빌딩 5층 / Tel. 042-477-5600 / Fax. 042-477-5602" />
+<title>온라인멘토링시스템</title>
+<link rel="stylesheet" type="text/css" href="../../css/common/webfonts.css" />
+<link rel="stylesheet" type="text/css" href="../../css/common/common.css" />
+<link rel="stylesheet" type="text/css" href="../../css/roundslider.min.css" />
+<link rel="stylesheet" type="text/css" href="../../css/system.css" />
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.0.1/css/glide.core.css" />
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.0.1/css/glide.theme.css" />
+
+<script type="text/javascript" src="../../js/jquery/core/jquery-1.11.2.min.js"></script>
+<script type="text/javascript" src="../../js/jquery/core/jquery-ui.custom.js"></script>
+<script type="text/javascript" src="../../js/jquery/core/jquery.easing.1.3.js"></script>
+<script type="text/javascript" src="../../js/roundslider.min.js"></script>
+<script type="text/javascript" src="../../js/script_system.js"></script>
+<script type="text/javascript" src="../../js/script_dummy.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/glide.js"></script>
+
+
+<!--[if lt IE 9]>
+<script type="text/javascript" src="/js/jquery/core/html5.js"></script>
+<![endif]-->
+</head>
+<body>
+<dl id="skipNav">
+	<dt class="hide">컨텐츠 바로가기 영역</dt>
+	<dd><a href="#content">본문으로 바로가기</a></dd>
+</dl>
+
+<div id="wrap" class="mettingRoomWrap">
+	<div id="shadow_device" style="display:none"></div>
+	<header id="header">
+		<div class="menu_trigger">
+			<p class="btn_menu"><a href="#"><i class="xi-align-left" aria-hidden="true"></i><span class="tooltip"><em>메뉴</em></span></a></p>
+			<p class="timer">00 : 01 : 30</p>
+			<p class="test_code" style="float:left;display:flex;justify-content:center;align-items:center;"><input id="roomInput"  value="10" style="float:left;width:3rem;"/> <a href="javascript:roomVideos();" style="float:left;text-decoration:underline;color:#01bbd4;">input</a> </p>
+		</div>
+
+		<div class="video_utilMenu_wrap"><!-- 마이크와 유틸메뉴를 감싸야 합니다. 2018-02-21 -->
+			<div class="video_setup">
+				<p class="btn_screen_mode mode_basic"><button type="button"><div class="ic_lymod_tile"></div><span class="tooltip"><em>격자보기</em></span></button></p>
+			</div>
+			<div class="video_setup">
+				<!--
+				<p class="camera"><a href="#" class="active"><i class="xi-webcam" aria-hidden="true"></i><span class="tooltip"><em>카메라</em></span></a></p>
+				<p class="mic"><a href="#"><i class="xi-microphone" aria-hidden="true"></i><span class="tooltip"><em>마이크</em></span></a></p>
+				-->
+				<p class="call"><button type="button"><i class="xi-call" aria-hidden="true"></i><span class="tooltip"><em>통화종료</em></span></button></p>
+				<p class="camera disable"><a href="#"><i class="xi-webcam" aria-hidden="true"></i><span class="tooltip"><em>카메라</em></span></a></p>
+				<p class="mic disable"><a href="#"><i class="xi-microphone" aria-hidden="true"></i><span class="tooltip"><em>마이크</em></span></a></p>
+			</div>
+			<div class="utilMenu_wrap">
+				<div class="etc">
+					<a href="#"><i class="gp-hands" aria-hidden="true"></i><span class="tooltip"><em>발표요청하기</em></span></a>
+					<a href="#" class="win_mode"><i class="xi-expand" aria-hidden="true"></i><span class="tooltip"><em>전체화면</em></span></a>
+					<a href="#" class="win_mode disable"><i class="xi-compress" aria-hidden="true"></i><span class="tooltip"><em>창모드</em></span></a>
+
+					<a href="#"><i class="xi-presentation" aria-hidden="true"></i><span class="tooltip"><em>프리젠테이션</em></span></a>
+				</div>
+				<div class="service">
+					<a href="#"><i class="xi-group" aria-hidden="true"></i><span class="tooltip"><em>참석자</em></span></a>
+					<a href="#"><i class="xi-library-books-o" aria-hidden="true"></i><span class="tooltip"><em>공유컨텐츠</em></span></a>
+					<a href="#"><i class="xi-forum-o" aria-hidden="true"></i><span class="tooltip"><em>채팅</em></span><span class="badge">7</span></a>
+					<a href="#"><i class="xi-share-alt-o" aria-hidden="true"></i><span class="tooltip"><em>공유노트</em></span></a>
+					<a href="#" class="active"><i class="xi-ellipsis-v" aria-hidden="true"></i><span class="tooltip"><em>부가서비스</em></span></a>
+				</div>
+				<!-- 모바일 메뉴추가 -->
+				<p class="btn_service_more"><!-- "active"추가시 활성화 -->
+					<a href="#"><i class="xi-apps" aria-hidden="true"></i><span class="hide">메뉴 더보기</span></a>
+				</p>
+				<!-- //모바일 메뉴추가 -->
+			</div>
+		</div>
+	</header>
+	<!-- 모바일에서만 보임 -->
+	<div id="serviceMore" class=""><!-- class="active"추가시 활성화 -->
+		<nav class="serviceMore_wrap">
+			<ul class="serviceMore_lst">
+			<li><a href="#"><i class="xi-group" aria-hidden="true"></i>참석자</a></li>
+			<li><a href="#"><i class="xi-library-books-o" aria-hidden="true"></i>공유컨텐츠</a></li>
+			<li><a href="#"><i class="xi-forum-o" aria-hidden="true"></i>채팅<span class="badge">7</span></a></li>
+			<li><a href="#"><i class="xi-share-alt-o" aria-hidden="true"></i> 공유노트</a></li>
+			<li><a href="#"><i class="xi-devices" aria-hidden="true"></i> 디바이스 관리</a></li>
+			<li><a href="#"><i class="xi-presentation" aria-hidden="true"></i> 설문/투표 관리</a></li>
+			<li><a href="#"><i class="xi-diskette" aria-hidden="true"></i> 회의록</a></li>
+			</ul>
+		</nav>
+		<p class="btn_close"><a href="#"><i class="xi-close" aria-hidden="true"></i><span class="hide">메뉴 더보기</span></a></p>
+	</div>
+	<!-- //모바일에서만 보임 -->
+
+	<hr/>
+	
+
+	<div id="content" class="container"><!-- current 추가 시 부가서비스활성화 -->
+		<section id="detail_content" style="min-width: 9.4rem; min-height: 9.4rem; padding: unset; background-color: gray;">
+			<!-- 빈노트 -->
+			<div id="notePage">
+
+
+				<div class="wrap webcamchat center">
+					<div class="glide" id="glide">
+					  <div class="glide__track" data-glide-el="track">
+						<ul class="glide__slides" id="glideVideos">
+						  
+						</ul> 
+					  </div>
+					
+					  <div class="glide__arrows" data-glide-el="controls">
+						<button class="glide__arrow glide__arrow--prev" data-glide-dir="<"><i class="xi-angle-left"></i> </button>
+						<button class="glide__arrow glide__arrow--next" data-glide-dir=">"><i class="xi-angle-right"></i> </button>
+					  </div>
+				
+					</div>
+					<p data-v-5a3cea6e="" class="btn_active_mark" style="pointer-events: all;"><button data-v-5a3cea6e="" class="close active"><i data-v-5a3cea6e="" aria-hidden="true" class="xi-angle-down-thin"></i><span data-v-5a3cea6e="" class="hide"></span></button> <button data-v-5a3cea6e="" class="open "><i data-v-5a3cea6e="" aria-hidden="true" class="xi-angle-up-thin"></i><span data-v-5a3cea6e="" class="hide"></span></button></p>
+					
+				  </div>
+
+				<div class="webcamchatfullScreen active"><!-- "active" 시 활성화 -->
+				</div>
+				
+
+			</div>
+			<!-- //빈노트 -->
+		</section>
+
+		<hr/>
+
+	
+
+	<hr/>
+
+</div>
+
+<script>
+
+	var $screen = document.getElementsByClassName('webcamchatfullScreen');
+	function getVideoDom(i,memberCount,activeId){
+		var dom = document.createElement('div');
+		var WH = getWH(memberCount);
+		dom.style.cssText = "width:"+WH.width+"%;height:"+WH.height+"%;";
+		if(activeId){
+			if(i === activeId){
+				dom.className = "screenWrapper active";
+			}
+		}else{
+			dom.className = "screenWrapper";
+		}
+		if(memberCount == 1){
+			dom.innerHTML = `<div class="screenBox" ><video class="myvideo" playsinline autoplay loop></video></div>`;
+		}else{
+			dom.innerHTML = `<div class="screenBox" ><video class="myvideo" playsinline autoplay loop></video><div class="userNameSpace">참가자이름</div></div>`;
+		}
+		return dom;
+	}
+
+	function roomVideos(num){
+		var activeId = 0;
+		activeId == null;
+		var memberCount = document.getElementById('roomInput').value;  
+		if(num){
+			memberCount = num;
+		}
+		while($screen[0].hasChildNodes()){
+			$screen[0].removeChild( $screen[0].firstChild ); 
+		}
+		for(var i = 0; i < memberCount ; i++){
+			$screen[0].append(getVideoDom(i, memberCount, activeId));
+		}
+		var myvideo = document.getElementsByClassName('myvideo');  
+		var handleSuccess = function (stream) {
+			for(var i = 0; i < myvideo.length ; i++){
+				myvideo[i].srcObject = stream; 
+			}
+		};
+		navigator.mediaDevices.getUserMedia({ video: true }).then(handleSuccess);
+	}
+
+	function getWH(key){
+		var w = 100;
+		var h = 100;
+		switch (Number(key)) {
+			case 1:
+				break;
+			case 2:
+				w = 50;
+				break;
+			case 3:
+			case 4:
+				w = 50;
+				h = 50;
+				break;
+			case 5:
+			case 6:
+				w = 33.3;
+				h = 50;
+				break;
+			case 7:
+			case 8:
+			case 9:
+				w = 33.3;
+				h = 33.3;
+				break;
+			case 10:
+			case 11:
+			case 12:
+				w = 25;
+				h = 33.3;
+				break;
+			case 13:
+			case 14:
+			case 15:
+			case 16:
+				w = 25;
+				h = 25;
+				break;
+			case 17:
+			case 18:
+			case 19:
+			case 20:
+				w = 20;
+				h = 25;
+				break;
+			case 21:
+			case 22:
+			case 23:
+			case 24:
+				w = 20;
+				h = 20;
+				break;
+			default:
+				w = 16.6;
+				h = 20;
+				break;
+		}
+		return {width:w,height:h};
+	}
+
+
+	(function(){
+		roomVideos();
+	}())
+
+</script>
+
+
+</body>
+</html>
