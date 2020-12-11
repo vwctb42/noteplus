@@ -21,14 +21,14 @@
 <link rel="stylesheet" type="text/css" href="../../css/system.css" />
 <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.0.1/css/glide.core.css" />
 <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.0.1/css/glide.theme.css" />
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/glide.js"></script>
 
 <script type="text/javascript" src="../../js/jquery/core/jquery-1.11.2.min.js"></script>
 <script type="text/javascript" src="../../js/jquery/core/jquery-ui.custom.js"></script>
 <script type="text/javascript" src="../../js/jquery/core/jquery.easing.1.3.js"></script>
 <script type="text/javascript" src="../../js/roundslider.min.js"></script>
 <script type="text/javascript" src="../../js/script_system.js"></script>
-<script type="text/javascript" src="../../js/script_dummy.js"></script>
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/glide.js"></script>
+<script type="text/javascript" src="../../js/script_meetingMode.js"></script>
 
 
 <!--[if lt IE 9]>
@@ -47,7 +47,7 @@
 		<div class="menu_trigger">
 			<p class="btn_menu"><a href="#"><i class="xi-align-left" aria-hidden="true"></i><span class="tooltip"><em>메뉴</em></span></a></p>
 			<p class="timer">00 : 01 : 30</p>
-			<p class="test_code" style="float:left;display:flex;justify-content:center;align-items:center;"><input id="roomInput"  value="10" style="float:left;width:3rem;"/> <a href="javascript:roomVideos();" style="float:left;text-decoration:underline;color:#01bbd4;">input</a> </p>
+			<p class="test_code" style="float:left;display:flex;justify-content:center;align-items:center;"><input id="roomInput"  value="30" style="float:left;width:3rem;"/> <a href="javascript:roomVideos();" style="float:left;text-decoration:underline;color:#01bbd4;">input</a> </p>
 		</div>
 
 		<div class="video_utilMenu_wrap"><!-- 마이크와 유틸메뉴를 감싸야 합니다. 2018-02-21 -->
@@ -110,21 +110,18 @@
 		<section id="detail_content" style="min-width: 9.4rem; min-height: 9.4rem; padding: unset; background-color: gray;">
 			<!-- 빈노트 -->
 			<div id="notePage">
+				<div id="notePageWrap" class="wrap webcamchat center">
+					<div id="webcamchat_wrap" class="webcamchat_wrap _scrollTinyBlue"></div>
 
-
-				<div class="wrap webcamchat center">
-					<div class="glide" id="glide">
+					<div id="glide" class="glide"  style="display: none;">
 					  <div class="glide__track" data-glide-el="track">
 						<ul class="glide__slides" id="glideVideos">
-						  
 						</ul> 
 					  </div>
-					
 					  <div class="glide__arrows" data-glide-el="controls">
 						<button class="glide__arrow glide__arrow--prev" data-glide-dir="<"><i class="xi-angle-left"></i> </button>
 						<button class="glide__arrow glide__arrow--next" data-glide-dir=">"><i class="xi-angle-right"></i> </button>
 					  </div>
-				
 					</div>
 					<p data-v-5a3cea6e="" class="btn_active_mark" style="pointer-events: all;"><button data-v-5a3cea6e="" class="close active"><i data-v-5a3cea6e="" aria-hidden="true" class="xi-angle-down-thin"></i><span data-v-5a3cea6e="" class="hide"></span></button> <button data-v-5a3cea6e="" class="open "><i data-v-5a3cea6e="" aria-hidden="true" class="xi-angle-up-thin"></i><span data-v-5a3cea6e="" class="hide"></span></button></p>
 					
@@ -145,117 +142,6 @@
 	<hr/>
 
 </div>
-
-<script>
-
-	var $screen = document.getElementsByClassName('webcamchatfullScreen');
-	function getVideoDom(i,memberCount,activeId){
-		var dom = document.createElement('div');
-		var WH = getWH(memberCount);
-		dom.style.cssText = "width:"+WH.width+"%;height:"+WH.height+"%;";
-		if(activeId){
-			if(i === activeId){
-				dom.className = "screenWrapper active";
-			}
-		}else{
-			dom.className = "screenWrapper";
-		}
-		if(memberCount == 1){
-			dom.innerHTML = `<div class="screenBox" ><video class="myvideo" playsinline autoplay loop></video></div>`;
-		}else{
-			dom.innerHTML = `<div class="screenBox" ><video class="myvideo" playsinline autoplay loop></video><div class="userNameSpace">참가자이름</div></div>`;
-		}
-		return dom;
-	}
-
-	function roomVideos(num){
-		var activeId = 0;
-		activeId == null;
-		var memberCount = document.getElementById('roomInput').value;  
-		if(num){
-			memberCount = num;
-		}
-		while($screen[0].hasChildNodes()){
-			$screen[0].removeChild( $screen[0].firstChild ); 
-		}
-		for(var i = 0; i < memberCount ; i++){
-			$screen[0].append(getVideoDom(i, memberCount, activeId));
-		}
-		var myvideo = document.getElementsByClassName('myvideo');  
-		var handleSuccess = function (stream) {
-			for(var i = 0; i < myvideo.length ; i++){
-				myvideo[i].srcObject = stream; 
-			}
-		};
-		navigator.mediaDevices.getUserMedia({ video: true }).then(handleSuccess);
-	}
-
-	function getWH(key){
-		var w = 100;
-		var h = 100;
-		switch (Number(key)) {
-			case 1:
-				break;
-			case 2:
-				w = 50;
-				break;
-			case 3:
-			case 4:
-				w = 50;
-				h = 50;
-				break;
-			case 5:
-			case 6:
-				w = 33.3;
-				h = 50;
-				break;
-			case 7:
-			case 8:
-			case 9:
-				w = 33.3;
-				h = 33.3;
-				break;
-			case 10:
-			case 11:
-			case 12:
-				w = 25;
-				h = 33.3;
-				break;
-			case 13:
-			case 14:
-			case 15:
-			case 16:
-				w = 25;
-				h = 25;
-				break;
-			case 17:
-			case 18:
-			case 19:
-			case 20:
-				w = 20;
-				h = 25;
-				break;
-			case 21:
-			case 22:
-			case 23:
-			case 24:
-				w = 20;
-				h = 20;
-				break;
-			default:
-				w = 16.6;
-				h = 20;
-				break;
-		}
-		return {width:w,height:h};
-	}
-
-
-	(function(){
-		roomVideos();
-	}())
-
-</script>
 
 
 </body>
