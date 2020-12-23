@@ -1791,6 +1791,8 @@ a:hover .tooltip,button:hover .tooltip{opacity:1;filter:alpha(opacity=100)}
 	#firstStateButton{top:50%;width:100%;margin:0;border-radius:0;transform:translate(0,-50%);-webkit-transform:translate(0,-50%)}
 	#firstStateButton .layer_contents{padding:1.5625rem 0.5rem}
 	#firstStateButton .first_mainCnts_wrap{width:auto}
+	/*비디오 테두리 라인 제거*/
+	#notePage .webcamchatfullScreen{padding:0 !important;}
 }
 
 @media screen and (max-width:480px){
