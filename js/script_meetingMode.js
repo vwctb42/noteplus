@@ -212,8 +212,10 @@ function getVideoDom(i,memberCount,activeId){
 		dom.className = "screenWrapper";
 	}
 	if(memberCount == 1){
-		dom.innerHTML = `<div class="screenBox" ><video class="myvideo" playsinline autoplay loop></video></div>`;
+		$screen[0].className = $screen[0].className+" singleVideo";
+		dom.innerHTML = `<div class="screenBox"><video class="myvideo" playsinline autoplay loop></video></div>`;
 	}else{
+		$screen[0].className = $screen[0].className.split('singleVideo')[0];
 		if(i != activeId){
 			dom.innerHTML = `<div class="screenBox" ><video class="myvideo" playsinline autoplay loop></video><div class="userNameSpace"><i class="xi-microphone-off"></i><span>참가자이름<span></div></div>`;
 		}else{
