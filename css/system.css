@@ -1783,8 +1783,8 @@ button.glide__arrow--prev{left:-1.875rem;padding: 0;}
 .videoOff .userNameSpace{background:none !important;}
 .glide_item_wrapper .glide_item_wrapper_inner{height:5.25rem;width: 100%;}
 .videoOff .videoOffuserName{display: flex !important;}
-
-
+.videoOff .userNameSpace{display: none;}
+.videoOff .name{display: none !important;}
 @media screen and (max-width:640px){
 	/*레이어팝업*/
 	.layerPopup_container{top:0;left:0;width:100%;min-height:auto;margin:0;transform:translate(0,0);-webkit-transform:translate(0,0)}
