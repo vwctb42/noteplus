@@ -72,7 +72,7 @@ function getGlideVideoDom(i,activeId){
 	var dom = document.createElement('li');
 	dom.className = "glide__slide";
 	if(activeId != i){
-		dom.innerHTML = `<div class="glide_item_wrapper"><div class="glide_item_wrapper_inner"><video class="glideVideo" playsinline autoplay loop muted></video><span class="name"><i class="xi-microphone-off"></i><span>참가자이름<span></span></div></div>`;
+		dom.innerHTML = `<div class="glide_item_wrapper"><div class="glide_item_wrapper_inner"><div class="videoOffuserName">참가자이름</div><video class="glideVideo" playsinline autoplay loop muted></video><span class="name"><i class="xi-microphone-off"></i><span>참가자이름<span></span></div></div>`;
 	}else{
 		dom.innerHTML = `<div class="glide_item_wrapper expand videoOff"><div class="videoOffuserName">참가자이름</div><span class="name"><i class="xi-microphone-off"></i><span><span></span></div>`;
 	}
@@ -217,7 +217,7 @@ function getVideoDom(i,memberCount,activeId){
 	}else{
 		$screen[0].className = $screen[0].className.split('singleVideo')[0];
 		if(i != activeId){
-			dom.innerHTML = `<div class="screenBox" ><video class="myvideo" playsinline autoplay loop></video><div class="userNameSpace"><i class="xi-microphone-off"></i><span>참가자이름<span></div></div>`;
+			dom.innerHTML = `<div class="screenBox" ><div class="videoOffuserName">참가자이름</div><video class="myvideo" playsinline autoplay loop></video><div class="userNameSpace"><i class="xi-microphone-off"></i><span>참가자이름<span></div></div>`;
 		}else{
 			dom.innerHTML = `<div class="screenBox  videoOff" ><div class="videoOffuserName">참가자이름</div><div class="userNameSpace"><i class="xi-microphone-off"></i></div></div>`;
 		}
